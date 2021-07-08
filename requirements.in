@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+notebook
+jupyterlab
+fastparquet
+pyasn
+parse
+networkx
+pydgraph
+easydict
+redis
+cachetools
+tqdm
+redisbloom
+beautifulsoup4
+
