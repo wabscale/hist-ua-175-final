@@ -20,15 +20,15 @@ backcall==0.2.0
     # via ipython
 beautifulsoup4==4.9.3
     # via -r requirements.in
-bleach==3.3.0
+bleach==3.3.1
     # via nbconvert
 cachetools==4.2.2
     # via -r requirements.in
 certifi==2021.5.30
     # via requests
-cffi==1.14.5
+cffi==1.14.6
     # via argon2-cffi
-chardet==4.0.0
+charset-normalizer==2.0.2
     # via requests
 cramjam==2.3.2
     # via fastparquet
@@ -48,13 +48,13 @@ entrypoints==0.3
     # via nbconvert
 fastparquet==0.6.3
     # via -r requirements.in
-fsspec==2021.6.1
+fsspec==2021.7.0
     # via fastparquet
 grpcio==1.38.1
     # via pydgraph
 hiredis==2.0.0
     # via redisbloom
-idna==2.10
+idna==3.2
     # via
     #   anyio
     #   requests
@@ -108,7 +108,7 @@ jupyterlab==3.0.16
     # via -r requirements.in
 jupyterlab-pygments==0.1.2
     # via nbconvert
-jupyterlab-server==2.6.0
+jupyterlab-server==2.6.1
     # via jupyterlab
 kiwisolver==1.3.1
     # via matplotlib
@@ -148,6 +148,7 @@ numpy==1.21.0
     #   fastparquet
     #   matplotlib
     #   pandas
+    #   pyarrow
 packaging==21.0
     # via
     #   bleach
@@ -181,6 +182,8 @@ ptyprocess==0.7.0
     # via
     #   pexpect
     #   terminado
+pyarrow==4.0.1
+    # via -r requirements.in
 pyasn==1.6.1
     # via -r requirements.in
 pycparser==2.20
@@ -198,7 +201,7 @@ pyparsing==2.4.7
     #   packaging
 pyrsistent==0.18.0
     # via jsonschema
-python-dateutil==2.8.1
+python-dateutil==2.8.2
     # via
     #   jupyter-client
     #   matplotlib
@@ -219,7 +222,7 @@ redis==3.5.3
     #   rmtest
 redisbloom==0.4.0
     # via -r requirements.in
-requests==2.25.1
+requests==2.26.0
     # via
     #   jupyterlab-server
     #   requests-unixsocket

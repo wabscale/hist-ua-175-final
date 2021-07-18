@@ -14,4 +14,4 @@ cachetools
 tqdm
 redisbloom
 beautifulsoup4
-
+pyarrow

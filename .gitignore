@@ -3,3 +3,7 @@ venv
 *.zip
 *.xlsx
 *.zip.*
+*.csv
+*.feather
+.dgraph-data
+__pycache__

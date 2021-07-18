@@ -10,3 +10,4 @@ pull:
 	wget -q 'https://www.dhs.gov/sites/default/files/publications/immigration-statistics/yearbook/2019/yrbk_2019_ni_excel_final.zip'
 	wget -q 'https://www.dhs.gov/sites/default/files/publications/immigration-statistics/yearbook/2019/yrbk_2019_enf_excel_final.zip'
 	find -maxdepth 1 -name '*.zip' -exec 'unzip' '{}' ';'
+	wget 'https://trac.syr.edu/phptools/immigration/remove/graph.php?stat=count&timescale=fymon&depart_state=2&timeunit=number' -O trac.json
