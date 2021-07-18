@@ -27,8 +27,10 @@ type Country {
 }
 
 countries: [uid] @reverse .
+ports_of_entry: [uid] @reverse .
 type Root {
     countries
+    ports_of_entry
 }
 
 """

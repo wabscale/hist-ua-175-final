@@ -1,5 +1,6 @@
 .idea
 venv
 *.zip.*
-.dgraph-data
+.dgraph*
 __pycache__
+*.json

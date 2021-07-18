@@ -3,121 +3,161 @@ import json
 
 from utils.dgraph import get_client, initialize_dgraph
 
-vertices = [{'uid': '_:root', 'dgraph.type': 'Root'}]
-edges = []
-
 # Create DGraph client
 client, stub = get_client()
 
-txn = client.txn()
 
-root = {
-    "uid": "_:root",
-    "dgraph.type": "Root",
-}
-response = txn.mutate(set_obj=root)
-root_uid = response.uids['root']
+class State(object):
+    def __init__(self):
+        self.countries = set()
+        self.port_of_entries = set()
 
-people = []
-countries = set()
-port_of_entries = set()
+        # UIDS
+        self.country_uids = dict()
+        self.port_of_entry_uids = dict()
 
-# EDGES
-country_people_edges = dict()
-port_of_entry_people_edges = dict()
-# UIDS
-person_uids = dict()
-country_uids = dict()
-port_of_entry_uids = dict()
+        self.root_uid = None
 
-with open('alien.csv', 'r') as csvfile:
-    reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
 
-    for row in reader:
-        naid = row['naid']
-        name = row['name']
-        alias = row['alias']
-        country = row['country'].strip()
-        port_of_entry = row['port of entry'].strip()
+def parse_file(state: State):
+    with open('alien.csv', 'r') as csvfile:
+        reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
 
-        person = {
-            'uid': '_:' + naid,
-            'dgraph.type': 'Person',
-            'name': name,
-            'naid': naid,
-            'alias': alias,
-        }
+        with open('people.json', 'w') as f:
 
+            for row in reader:
+                naid = row['naid']
+                name = row['name']
+                alias = row['alias']
+                country = row['country'].strip()
+                port_of_entry = row['port of entry'].strip()
+
+                person = {
+                    'uid': '_:' + naid,
+                    'dgraph.type': 'Person',
+                    'name': name,
+                    'naid': naid,
+                    'alias': alias,
+                    'country': country,
+                    'port_of_entry': port_of_entry,
+                }
+
+                f.write(json.dumps(person) + '\n')
+                state.countries.add(country)
+                state.port_of_entries.add(port_of_entry)
+        csvfile.close()
+
+
+def create_people(state: State):
+    txn = client.txn()
+    index = 0
+
+    for person_line in open('people.json', 'r'):
+        person = json.loads(person_line)
+        country = person['country']
+        port_of_entry = person['port_of_entry']
+        del person['country']
+        del person['port_of_entry']
         response = txn.mutate(set_obj=person)
-        person_uids[naid] = response.uids[naid]
+        person_uid = response.uids[person['naid']]
+        create_edges(state, person_uid, country, port_of_entry)
 
-        people.append(people)
-        countries.add(country)
-        port_of_entries.add(port_of_entry)
+        del person
+        del person_line
 
-        if country not in country_people_edges:
-            country_people_edges[country] = []
-        if port_of_entry not in port_of_entry_people_edges:
-            port_of_entry_people_edges[port_of_entry] = []
+        if index % 500 == 0:
+            txn.commit()
+            del txn
+            txn = client.txn()
 
-        country_people_edges[country].append(naid)
-        port_of_entry_people_edges[port_of_entry].append(naid)
-
-    csvfile.close()
-
-for person in people:
-    response = txn.mutate(set_obj=person)
-    person_uids[person['naid']] = response.uids[person['naid']]
-txn.commit()
-
-for country in countries:
-    response = txn.mutate(set_obj={
-        'uid': '_:' + hash(country),
-        'dgraph.type': 'Country',
-        'country': country,
-    })
-    country_uids[country] = response.uids[hash(country)]
-txn.commit()
-
-for port_of_entry in port_of_entries:
-    response = txn.mutate(set_obj={
-        'uid': '_:' + hash(port_of_entry),
-        'dgraph.type': 'PortOfEntry',
-        'port_of_entry': port_of_entry,
-    })
-    port_of_entry_uids[port_of_entry] = response.uids[hash(port_of_entry)]
-txn.commit()
-
-for country, persons in country_people_edges.items():
-    txn.mutate(set_obj={
-        'uid': country_uids[country],
-        'people': [
-            {'uid': person_uids[person]}
-            for person in persons
-        ],
-    })
-txn.commit()
-
-for country, persons in country_people_edges.items():
-    txn.mutate(set_obj={
-        'uid': country_uids[country],
-        'people': [
-            {'uid': person_uids[person]}
-            for person in persons
-        ],
-    })
-    txn.commit()
-
-for port_of_entry, persons in port_of_entry_people_edges.items():
-    txn.mutate(set_obj={
-        'uid': port_of_entry_uids[port_of_entry],
-        'people': [
-            {'uid': person_uids[person]}
-            for person in persons
-        ],
-    })
     txn.commit()
 
 
+def create_set_v(state: State):
+    txn = client.txn()
+
+    for country in state.countries:
+        response = txn.mutate(set_obj={
+            'uid': '_:' + str(hash(country)),
+            'dgraph.type': 'Country',
+            'country': country,
+        })
+        state.country_uids[country] = response.uids[str(hash(country))]
+
+    for port_of_entry in state.port_of_entries:
+        response = txn.mutate(set_obj={
+            'uid': '_:' + str(hash(port_of_entry)),
+            'dgraph.type': 'PortOfEntry',
+            'port_of_entry': port_of_entry,
+        })
+        state.port_of_entry_uids[port_of_entry] = response.uids[str(hash(port_of_entry))]
+
+    txn.mutate(set_obj={
+        'uid': state.root_uid,
+        'countries': [
+            {'uid': country_uid}
+            for country_uid in state.country_uids.values()
+        ],
+    })
+    txn.mutate(set_obj={
+        'uid': state.root_uid,
+        'ports_of_entry': [
+            {'uid': port_of_entry_uid}
+            for port_of_entry_uid in state.port_of_entry_uids.values()
+        ],
+    })
+
+    txn.commit()
+
+
+def create_edges(state: State, person_uid: str, country: str, port_of_entry: str):
+    txn = client.txn()
+
+    txn.mutate(set_obj={
+        'uid': state.country_uids[country],
+        'people': [{'uid': person_uid}],
+    })
+
+    txn.mutate(set_obj={
+        'uid': state.port_of_entry_uids[port_of_entry],
+        'people': [{'uid': person_uid}],
+    })
+
+    txn.commit()
+
+
+def create_root(state: State):
+    txn = client.txn()
+
+    root = {
+        "uid": "_:root",
+        "dgraph.type": "Root",
+    }
+    response = txn.mutate(set_obj=root)
+    root_uid = response.uids['root']
+    state.root_uid = root_uid
+
+    txn.commit()
+
+
+def main():
+    initialize_dgraph()
+    state = State()
+
+    print('Creating root')
+    create_root(state)
+
+    print('Parsing file')
+    parse_file(state)
+
+    print('Creating set v')
+    create_set_v(state)
+
+    print('Create people v')
+    create_people(state)
+
+
+if __name__ == '__main__':
+    main()
 
 

@@ -15,7 +15,7 @@ services:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/z1:/dgraph
+      - ./.dgraph/z1:/dgraph
     ports:
       - 5080:5080
       - 6080:6080
@@ -25,7 +25,7 @@ services:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/z2:/dgraph
+      - ./.dgraph/z2:/dgraph
     ports:
       - 5081:5081
       - 6081:6081
@@ -35,7 +35,7 @@ services:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/z3:/dgraph
+      - ./.dgraph/z3:/dgraph
     ports:
       - 5082:5082
       - 6082:6082
@@ -45,63 +45,64 @@ services:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/a1:/dgraph
+      - ./.dgraph/a1:/dgraph
     ports:
       - 8080:8080
       - 9080:9080
-    command: dgraph alpha --my=alpha1:7080 --zero=zero1:5080,zero2:5081,zero3:5082
+    command: dgraph alpha --my=alpha1:7080 --zero=zero1:5080,zero2:5081,zero3:5082 --security whitelist=0.0.0.0/0
 
   alpha2:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/a2:/dgraph
+      - ./.dgraph/a2:/dgraph
     ports:
       - 8081:8081
       - 9081:9081
-    command: dgraph alpha --my=alpha2:7081 --zero=zero1:5080,zero2:5081,zero3:5082 -o 1
+    command: dgraph alpha --my=alpha2:7081 --zero=zero1:5080,zero2:5081,zero3:5082 -o 1 --security whitelist=0.0.0.0/0
 
   alpha3:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/a3:/dgraph
+      - ./.dgraph/a3:/dgraph
     ports:
       - 8082:8082
       - 9082:9082
-    command: dgraph alpha --my=alpha3:7082 --zero=zero1:5080,zero2:5081,zero3:5082 -o 2
+    command: dgraph alpha --my=alpha3:7082 --zero=zero1:5080,zero2:5081,zero3:5082 -o 2 --security whitelist=0.0.0.0/0
 
   alpha4:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/a4:/dgraph
+      - ./.dgraph/a4:/dgraph
     ports:
       - 8083:8083
       - 9083:9083
-    command: dgraph alpha --my=alpha4:7083 --zero=zero1:5080,zero2:5081,zero3:5082 -o 3
+    command: dgraph alpha --my=alpha4:7083 --zero=zero1:5080,zero2:5081,zero3:5082 -o 3 --security whitelist=0.0.0.0/0
 
   alpha5:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/a5:/dgraph
+      - ./.dgraph/a5:/dgraph
     ports:
       - 8084:8084
       - 9084:9084
-    command: dgraph alpha --my=alpha5:7084 --zero=zero1:5080,zero2:5081,zero3:5082 -o 4
+    command: dgraph alpha --my=alpha5:7084 --zero=zero1:5080,zero2:5081,zero3:5082 -o 4 --security whitelist=0.0.0.0/0
 
   alpha6:
     image: dgraph/dgraph:latest
     restart: on-failure
     volumes:
-      - ./.dgraph-data/a6:/dgraph
+      - ./.dgraph/a6:/dgraph
     ports:
       - 8085:8085
       - 9085:9085
-    command: dgraph alpha --my=alpha6:7085 --zero=zero1:5080,zero2:5081,zero3:5082 -o 5
+    command: dgraph alpha --my=alpha6:7085 --zero=zero1:5080,zero2:5081,zero3:5082 -o 5 --security whitelist=0.0.0.0/0
 
   ratel:
     image: dgraph/ratel:latest
     ports:
       - 8000:8000
+    command: dgraph-ratel
