@@ -7,12 +7,10 @@ from argparse import ArgumentParser
 
 import humps
 import tqdm
+import multiprocessing as mp
 
 from dateutil.parser import parse as _date_parse, ParserError
 from utils.dgraph import get_client, initialize_dgraph
-
-# Create DGraph client
-client, stub = get_client()
 
 
 class State(object):
@@ -20,7 +18,11 @@ class State(object):
         self.field_keys = ['country', 'port_of_entry', 'age', 'age_of_entry', 'age_of_naturalization']
 
         self.field_sets = dict()
-        self.field_uids = dict()
+        self.field_uids = {
+            field: dict()
+            for field in self.field_keys
+        }
+        self._field_uid_set = {field: set() for field in self.field_keys}
 
         self.root_uid = None
         self.root_edges = [('country', 'countries'), ('port_of_entry', 'ports_of_entry')]
@@ -32,10 +34,11 @@ class State(object):
         self.field_sets[field].add(value)
 
     def add_field_uid(self, field, key, uid):
-        if field not in self.field_uids:
-            self.field_uids[field] = dict()
-
         self.field_uids[field][key] = uid
+        self._field_uid_set[field].add(uid)
+
+    def get_stored_field_uids(self, field: str) -> set:
+        return self._field_uid_set[field]
 
 
 def date_parse(date_str: str, default: Any = None) -> datetime:
@@ -51,7 +54,7 @@ def date_parse(date_str: str, default: Any = None) -> datetime:
 def parse_file(state: State, n: int = 0):
     os.makedirs('_people/', exist_ok=True)
     person_file_index = 0
-    person_file_cap = 1000
+    person_file_cap = 10_000
     person_file = open(f'_people/people{person_file_index}.json', 'w')
 
     with open('alien.csv', 'r') as csvfile:
@@ -100,7 +103,7 @@ def parse_file(state: State, n: int = 0):
                 break
 
             person_file_size += 1
-            if person_file_size == person_file_cap:
+            if person_file_size % person_file_cap == 0:
                 person_file.close()
                 person_file_index += 1
                 person_file = open(f'_people/people{person_file_index}.json', 'w')
@@ -110,9 +113,10 @@ def parse_file(state: State, n: int = 0):
 
 
 def create_people(state: State, index: int):
+    client, stub = get_client()
     txn = client.txn()
 
-    for person_line in open(f'_people/people{index}.json', 'r'):
+    for index, person_line in enumerate(open(f'_people/people{index}.json', 'r')):
         person = json.loads(person_line)
 
         fields = {
@@ -129,10 +133,17 @@ def create_people(state: State, index: int):
         del person
         del person_line
 
+        if index % 300 == 0:
+            txn.commit()
+            del txn
+            txn = client.txn()
+
     txn.commit()
+    del txn
 
 
 def create_set_v(state: State):
+    client, stub = get_client()
     txn = client.txn()
 
     for field, field_set in state.field_sets.items():
@@ -152,7 +163,7 @@ def create_set_v(state: State):
             'uid': state.root_uid,
             downname: [
                 {'uid': uid}
-                for uid in state.field_uids[field].values()
+                for uid in state.get_stored_field_uids(field)
             ],
         })
 
@@ -168,6 +179,7 @@ def create_edges(state: State, txn, person_uid: str, fields: dict):
 
 
 def create_root(state: State):
+    client, stub = get_client()
     txn = client.txn()
 
     root = {
@@ -183,15 +195,13 @@ def create_root(state: State):
 
 def parse_args():
     parser = ArgumentParser()
-    parser.add_argument('n', type=int, default=0, help='number of lines to parse')
+    parser.add_argument('-n', type=int, default=0, help='number of lines to parse')
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
-
     initialize_dgraph()
-
     state = State()
 
     print('Creating root')
@@ -204,8 +214,11 @@ def main():
     create_set_v(state)
 
     print('Create people v')
-    for index in tqdm.tqdm(range(person_file_count+1)):
+    for index in tqdm.trange(person_file_count+1):
         create_people(state, index)
+    # with mp.Pool(10) as pool:
+    #     args = [(state, index) for index in range(person_file_count+1)]
+    #     pool.starmap(create_people, args)
 
 
 if __name__ == '__main__':
