@@ -28,7 +28,7 @@ certifi==2021.5.30
     # via requests
 cffi==1.14.6
     # via argon2-cffi
-charset-normalizer==2.0.2
+charset-normalizer==2.0.3
     # via requests
 cramjam==2.3.2
     # via fastparquet
@@ -46,7 +46,7 @@ easydict==1.9
     # via -r requirements.in
 entrypoints==0.3
     # via nbconvert
-fastparquet==0.6.3
+fastparquet==0.7.0
     # via -r requirements.in
 fsspec==2021.7.0
     # via fastparquet
@@ -58,7 +58,7 @@ idna==3.2
     # via
     #   anyio
     #   requests
-ipykernel==6.0.1
+ipykernel==6.0.2
     # via notebook
 ipython==7.25.0
     # via
@@ -117,7 +117,9 @@ markupsafe==2.0.1
 matplotlib==3.4.2
     # via -r requirements.in
 matplotlib-inline==0.1.2
-    # via ipython
+    # via
+    #   ipykernel
+    #   ipython
 mistune==0.8.4
     # via nbconvert
 nbclassic==0.3.1
@@ -142,7 +144,7 @@ notebook==6.4.0
     # via
     #   -r requirements.in
     #   nbclassic
-numpy==1.21.0
+numpy==1.21.1
     # via
     #   -r requirements.in
     #   fastparquet
@@ -195,6 +197,8 @@ pygments==2.9.0
     #   ipython
     #   jupyterlab-pygments
     #   nbconvert
+pyhumps==3.0.2
+    # via -r requirements.in
 pyparsing==2.4.7
     # via
     #   matplotlib

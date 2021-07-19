@@ -1,15 +1,10 @@
 import random
 
 import pydgraph
+from utils.checkpoint import checkpoint
 
 schema = """
 people: [uid] @reverse .
-
-port_of_entry: string .
-type PortOfEntry {
-    port_of_entry
-    people
-}
 
 naid: int .
 name: string @index(term) .
@@ -18,6 +13,30 @@ type Person {
     name
     naid
     alias
+}
+
+age: int .
+type Age {
+    age
+    people
+}
+
+age_of_entry: int .
+type AgeOfEntry {
+    age_of_entry
+    people
+}
+
+age_of_naturalization: int .
+type AgeOfNaturalization {
+    age_of_naturalization
+    people
+}
+
+port_of_entry: string .
+type PortOfEntry {
+    port_of_entry
+    people
 }
 
 country: string @index(exact) .
@@ -121,4 +140,3 @@ def initialize_dgraph():
 
     # Close outstanding connections
     stub.close()
-

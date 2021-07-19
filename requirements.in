@@ -15,3 +15,4 @@ tqdm
 redisbloom
 beautifulsoup4
 pyarrow
+pyhumps
