@@ -19,7 +19,15 @@ from utils.dgraph import get_client, initialize_dgraph
 
 class State(object):
     def __init__(self):
-        self.field_keys = ['country', 'port_of_entry', 'age', 'age_of_entry', 'age_of_naturalization', 'sex']
+        self.field_keys = [
+            'country',
+            'port_of_entry',
+            'age',
+            'age_of_entry',
+            'age_of_naturalization',
+            'sex',
+            'year_of_entry',
+        ]
         self.field_uid_map = {
             'country': 'c',
             'port_of_entry': 'poe',
@@ -95,7 +103,7 @@ def parse_file(state: State, n: int = 0):
             doe = date_parse(date_of_entry, default=dob)
             don = date_parse(naturalization_date, default=dob)
             yoe = parse.parse('{}-{}-{}', date_of_entry)
-            yoe = yoe[0] if yoe else 'unknown'
+            yoe = yoe[0] if yoe else -1
 
             age = (now - dob).days // 365
             aae = (doe - dob).days // 365
@@ -175,8 +183,8 @@ def create_set_v(state: State):
 
     for field, field_set in state.field_sets.items():
         for value in field_set:
-            if value == '':
-                value = 'unknown'
+            if value == '' or value == -1:
+                continue
             response = txn.mutate(set_obj={
                 'uid': '_:' + str(hash(value)),
                 'dgraph.type': humps.pascalize(field),
@@ -201,8 +209,8 @@ def create_set_v(state: State):
 
 def create_edges(state: State, txn, person_uid: str, fields: dict):
     for field, value in fields.items():
-        if value == '':
-            value = 'unknown'
+        if value == '' or value == -1:
+            continue
         txn.mutate(set_obj={
             'uid': person_uid,
             state.field_uid_map[field]: [{'uid': state.field_uids[field][value]}],
