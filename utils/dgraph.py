@@ -4,52 +4,60 @@ import pydgraph
 from utils.checkpoint import checkpoint
 
 schema = """
-people: [uid] @reverse .
-
 naid: int .
 name: string @index(term) .
 alias: string .
+
+a: [uid] @reverse .
+aoe: [uid] @reverse .
+aon: [uid] @reverse .
+poe: [uid] @reverse .
+c: [uid] @reverse .
+
 type Person {
     name
     naid
     alias
+    
+    a
+    aoe
+    aon
+    poe
+    c
 }
 
 age: int .
 type Age {
     age
-    people
 }
 
 age_of_entry: int .
 type AgeOfEntry {
     age_of_entry
-    people
 }
 
 age_of_naturalization: int .
 type AgeOfNaturalization {
     age_of_naturalization
-    people
 }
 
 port_of_entry: string .
 type PortOfEntry {
     port_of_entry
-    people
 }
 
 country: string @index(exact) .
 type Country {
     country
-    people
 }
 
+people: [uid] @reverse .
 countries: [uid] @reverse .
 ports_of_entry: [uid] @reverse .
 type Root {
     countries
     ports_of_entry
+    people
 }
 
 """

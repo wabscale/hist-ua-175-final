@@ -4,3 +4,4 @@ venv
 .dgraph*
 __pycache__
 *.json
+*.pickle

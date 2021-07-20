@@ -1,6 +1,9 @@
-import csv
+import pickle
 import json
+import csv
+import sys
 import os
+
 from typing import Any
 from datetime import datetime
 from argparse import ArgumentParser
@@ -16,6 +19,13 @@ from utils.dgraph import get_client, initialize_dgraph
 class State(object):
     def __init__(self):
         self.field_keys = ['country', 'port_of_entry', 'age', 'age_of_entry', 'age_of_naturalization']
+        self.field_uid_map = {
+            'country': 'c',
+            'port_of_entry': 'poe',
+            'age': 'a',
+            'age_of_entry': 'aoe',
+            'age_of_naturalization': 'aon',
+        }
 
         self.field_sets = dict()
         self.field_uids = {
@@ -112,11 +122,13 @@ def parse_file(state: State, n: int = 0):
     return person_file_index
 
 
-def create_people(state: State, index: int):
+def create_people(state: State, _index: int):
+    print(f'Starting _people/people{_index}.json')
+
     client, stub = get_client()
     txn = client.txn()
 
-    for index, person_line in enumerate(open(f'_people/people{index}.json', 'r')):
+    for index, person_line in enumerate(open(f'_people/people{_index}.json', 'r')):
         person = json.loads(person_line)
 
         fields = {
@@ -140,6 +152,8 @@ def create_people(state: State, index: int):
 
     txn.commit()
     del txn
+
+    print(f'Finishing _people/people{_index}.json')
 
 
 def create_set_v(state: State):
@@ -172,20 +186,23 @@ def create_set_v(state: State):
 
 def create_edges(state: State, txn, person_uid: str, fields: dict):
     for field, value in fields.items():
+        if value == '':
+            continue
         txn.mutate(set_obj={
-            'uid': state.field_uids[field][value],
-            'people': [{'uid': person_uid}],
+            'uid': person_uid,
+            state.field_uid_map[field]: [{'uid': state.field_uids[field][value]}],
         })
+    txn.mutate(set_obj={
+        'uid': state.root_uid,
+        'people': [{'uid': person_uid}]
+    })
 
 
 def create_root(state: State):
     client, stub = get_client()
     txn = client.txn()
 
-    root = {
-        "uid": "_:root",
-        "dgraph.type": "Root",
-    }
+    root = {"uid": "_:root", "dgraph.type": "Root"}
     response = txn.mutate(set_obj=root)
     root_uid = response.uids['root']
     state.root_uid = root_uid
@@ -213,12 +230,12 @@ def main():
     print('Creating set v')
     create_set_v(state)
 
+    pickle.dump(state, open('state.pickle', 'wb'))
+
     print('Create people v')
-    for index in tqdm.trange(person_file_count+1):
-        create_people(state, index)
-    # with mp.Pool(10) as pool:
-    #     args = [(state, index) for index in range(person_file_count+1)]
-    #     pool.starmap(create_people, args)
+    with mp.Pool(10) as pool:
+        args = [(state, index) for index in range(person_file_count+1)]
+        pool.starmap(create_people, args)
 
 
 if __name__ == '__main__':
