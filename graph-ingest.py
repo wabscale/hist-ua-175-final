@@ -10,6 +10,7 @@ from argparse import ArgumentParser
 
 import humps
 import tqdm
+import parse
 import multiprocessing as mp
 
 from dateutil.parser import parse as _date_parse, ParserError
@@ -18,13 +19,15 @@ from utils.dgraph import get_client, initialize_dgraph
 
 class State(object):
     def __init__(self):
-        self.field_keys = ['country', 'port_of_entry', 'age', 'age_of_entry', 'age_of_naturalization']
+        self.field_keys = ['country', 'port_of_entry', 'age', 'age_of_entry', 'age_of_naturalization', 'sex']
         self.field_uid_map = {
             'country': 'c',
             'port_of_entry': 'poe',
             'age': 'a',
             'age_of_entry': 'aoe',
             'age_of_naturalization': 'aon',
+            'sex': 's',
+            'year_of_entry': 'yoe',
         }
 
         self.field_sets = dict()
@@ -35,7 +38,12 @@ class State(object):
         self._field_uid_set = {field: set() for field in self.field_keys}
 
         self.root_uid = None
-        self.root_edges = [('country', 'countries'), ('port_of_entry', 'ports_of_entry')]
+        self.root_edges = [
+            ('country', 'countries'),
+            ('port_of_entry', 'ports_of_entry'),
+            ('sex', 'sexes'),
+            ('year_of_entry', 'years_of_entry')
+        ]
 
     def add_field_set(self, field, value):
         if field not in self.field_sets:
@@ -80,11 +88,14 @@ def parse_file(state: State, n: int = 0):
             naturalization_date = row['naturalization date'].strip()
             country = row['country'].strip()
             port_of_entry = row['port of entry'].strip()
+            sex = row['sex'].strip()
 
             now = datetime.today()
             dob = date_parse(birth_date, default=now)
             doe = date_parse(date_of_entry, default=dob)
             don = date_parse(naturalization_date, default=dob)
+            yoe = parse.parse('{}-{}-{}', date_of_entry)
+            yoe = yoe[0] if yoe else 'unknown'
 
             age = (now - dob).days // 365
             aae = (doe - dob).days // 365
@@ -101,6 +112,8 @@ def parse_file(state: State, n: int = 0):
                 'age_of_naturalization': aan,
                 'country': country,
                 'port_of_entry': port_of_entry,
+                'year_of_entry': yoe,
+                'sex': sex,
             }
 
             person_file.write(json.dumps(person) + '\n')
@@ -162,6 +175,8 @@ def create_set_v(state: State):
 
     for field, field_set in state.field_sets.items():
         for value in field_set:
+            if value == '':
+                value = 'unknown'
             response = txn.mutate(set_obj={
                 'uid': '_:' + str(hash(value)),
                 'dgraph.type': humps.pascalize(field),
@@ -187,7 +202,7 @@ def create_set_v(state: State):
 def create_edges(state: State, txn, person_uid: str, fields: dict):
     for field, value in fields.items():
         if value == '':
-            continue
+            value = 'unknown'
         txn.mutate(set_obj={
             'uid': person_uid,
             state.field_uid_map[field]: [{'uid': state.field_uids[field][value]}],
@@ -213,6 +228,7 @@ def create_root(state: State):
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument('-n', type=int, default=0, help='number of lines to parse')
+    parser.add_argument('-w', type=int, default=8, help='number of workers to use')
     return parser.parse_args()
 
 
@@ -233,7 +249,7 @@ def main():
     pickle.dump(state, open('state.pickle', 'wb'))
 
     print('Create people v')
-    with mp.Pool(10) as pool:
+    with mp.Pool(args.w) as pool:
         args = [(state, index) for index in range(person_file_count+1)]
         pool.starmap(create_people, args)
 

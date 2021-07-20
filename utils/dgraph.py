@@ -8,22 +8,26 @@ naid: int .
 name: string @index(term) .
 alias: string .
 
-a: [uid] @reverse .
 aoe: [uid] @reverse .
 aon: [uid] @reverse .
 poe: [uid] @reverse .
+yoe: [uid] @reverse .
+a: [uid] @reverse .
 c: [uid] @reverse .
+s: [uid] @reverse .
 
 type Person {
     name
     naid
     alias
     
-    a
     aoe
     aon
     poe
+    yoe
+    a
     c
+    s
 }
 
 age: int .
@@ -51,13 +55,27 @@ type Country {
     country
 }
 
+sex: string .
+type Sex {
+    sex
+}
+
+year_of_entry: int .
+type YearOfEntry {
+    year_of_entry
+}
+
 people: [uid] @reverse .
 countries: [uid] @reverse .
 ports_of_entry: [uid] @reverse .
+sexes: [uid] @reverse .
+years_of_entry: [uid] @reverse .
 type Root {
     countries
     ports_of_entry
     people
+    sexes
+    years_of_entry
 }
 
 """
