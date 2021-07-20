@@ -183,8 +183,8 @@ def create_set_v(state: State):
 
     for field, field_set in state.field_sets.items():
         for value in field_set:
-            if value == '' or value == -1:
-                continue
+            if value == '':
+                value = 'unknown'
             response = txn.mutate(set_obj={
                 'uid': '_:' + str(hash(value)),
                 'dgraph.type': humps.pascalize(field),
@@ -209,8 +209,8 @@ def create_set_v(state: State):
 
 def create_edges(state: State, txn, person_uid: str, fields: dict):
     for field, value in fields.items():
-        if value == '' or value == -1:
-            continue
+        if value == '':
+            value = 'unknown'
         txn.mutate(set_obj={
             'uid': person_uid,
             state.field_uid_map[field]: [{'uid': state.field_uids[field][value]}],
