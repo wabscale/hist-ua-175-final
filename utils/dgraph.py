@@ -30,37 +30,37 @@ type Person {
     s
 }
 
-age: int .
+age: int @index(int)  .
 type Age {
     age
 }
 
-age_of_entry: int .
+age_of_entry: int @index(int) .
 type AgeOfEntry {
     age_of_entry
 }
 
-age_of_naturalization: int .
+age_of_naturalization: int @index(int) .
 type AgeOfNaturalization {
     age_of_naturalization
 }
 
-port_of_entry: string .
+port_of_entry: string @index(exact, term) .
 type PortOfEntry {
     port_of_entry
 }
 
-country: string @index(exact) .
+country: string @index(exact, term) .
 type Country {
     country
 }
 
-sex: string .
+sex: string @index(exact) .
 type Sex {
     sex
 }
 
-year_of_entry: int .
+year_of_entry: dateTime @index(year) .
 type YearOfEntry {
     year_of_entry
 }
