@@ -1,5 +1,66 @@
 # Hist 175 Final Project
 
+
+```graphql
+{
+	port_of_entry(func: eq(port_of_entry, "New York, NY")) {
+		port_of_entry
+		people: ~poe {
+			name
+			naid
+			country: c {
+				country
+			}
+			year_of_entry: yoe {
+				year_of_entry
+			}
+		}
+	}
+}
+```
+
+![alt img/img4.png](img/img4.png)
+
+---
+
+
+```graphql
+{
+  var(func: eq(country, "Italy")) {
+		country
+    italians as ~c {
+			name
+    }
+  }
+  
+  var(func: eq(year_of_entry, 1963)) {
+		year_of_entry
+    y1963p as ~yoe {
+			name
+    }
+  }
+  
+	port_of_entry(func: eq(port_of_entry, "New York, NY")) {
+		port_of_entry
+		people: ~poe(first: 30) @filter(uid(italians) AND uid(y1963p)) {
+			name
+			naid
+			country: c {
+				country
+			}
+			year_of_entry: yoe {
+				year_of_entry
+			}
+		}
+	}
+}
+```
+
+![alt img/img3.png](img/img3.png)
+
+
+---
+
 ```graphql
 {
     root(func: type(Root)) {
