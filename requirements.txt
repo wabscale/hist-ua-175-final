@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-anyio==3.2.1
+anyio==3.3.0
     # via jupyter-server
 argon2-cffi==20.1.0
     # via
@@ -34,7 +34,7 @@ cramjam==2.3.2
     # via fastparquet
 cycler==0.10.0
     # via matplotlib
-debugpy==1.3.0
+debugpy==1.4.1
     # via ipykernel
 decorator==4.4.2
     # via
@@ -50,7 +50,7 @@ fastparquet==0.7.0
     # via -r requirements.in
 fsspec==2021.7.0
     # via fastparquet
-grpcio==1.38.1
+grpcio==1.39.0
     # via pydgraph
 hiredis==2.0.0
     # via redisbloom
@@ -58,7 +58,7 @@ idna==3.2
     # via
     #   anyio
     #   requests
-ipykernel==6.0.2
+ipykernel==6.0.3
     # via notebook
 ipython==7.25.0
     # via
@@ -99,7 +99,7 @@ jupyter-core==4.7.1
     #   nbconvert
     #   nbformat
     #   notebook
-jupyter-server==1.9.0
+jupyter-server==1.10.1
     # via
     #   jupyterlab
     #   jupyterlab-server
@@ -151,6 +151,7 @@ numpy==1.21.1
     #   matplotlib
     #   pandas
     #   pyarrow
+    #   scipy
 packaging==21.0
     # via
     #   bleach
@@ -234,6 +235,8 @@ requests-unixsocket==0.2.0
     # via jupyter-server
 rmtest==0.7.0
     # via redisbloom
+scipy==1.7.0
+    # via -r requirements.in
 send2trash==1.7.1
     # via
     #   jupyter-server
