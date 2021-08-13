@@ -33,7 +33,7 @@ const drag = (simulation) => {
 };
 
 
-const graphIt = (data) => (svg) => {
+const graphIt = (data, w, h) => (svg) => {
   const links = data.links.map(d => Object.create(d));
   const nodes = data.nodes.map(d => Object.create(d));
 
@@ -44,8 +44,10 @@ const graphIt = (data) => (svg) => {
 
   const simulation = d3.forceSimulation(nodes)
     .force("link", d3.forceLink(links).id(d => d.id))
-    .force("charge", d3.forceManyBody())
-    .force("center", d3.forceCenter(width / 2, height / 2));
+    .force("center", d3.forceCenter(w / 2, h / 2))
+    .force("charge", d3.forceManyBody().strength(-50))
+    .force("x", d3.forceX())
+    .force("y", d3.forceY())
 
   svg.append('svg:defs').append('svg:marker')
       .attr('id', 'triangle')
@@ -65,7 +67,7 @@ const graphIt = (data) => (svg) => {
       .selectAll('line')
       .data(links)
       .join('line')
-      .attr('stroke-width', (d) => Math.sqrt(d.depth))
+      .attr('stroke-width', 1)
       .attr('marker-end', 'url(#triangle)');
 
   const node = svg.append('g')
@@ -79,8 +81,6 @@ const graphIt = (data) => (svg) => {
       .attr('class', 'graph-node')
       .attr('fill', color)
       .call(drag(simulation));
-
-
 
   // const link = svg.append("g")
   //   .attr("stroke", "#999")
@@ -139,9 +139,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Graph({title=null, data, w=width, h=height}) {
+export default function Graph({title = null, data, w = width, h = height}) {
   const classes = useStyles();
-  const ref = useD3(graphIt(data), []);
+  const ref = useD3(graphIt(data, w, h), []);
 
   return (
     <Paper className={classes.paper}>
@@ -152,6 +152,11 @@ export default function Graph({title=null, data, w=width, h=height}) {
         ref={ref}
         viewBox={[0, 0, w, h]}
       />
+      <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+        <Typography variant={'body2'}>
+          Try dragging nodes around. Hover over for labels.
+        </Typography>
+      </div>
     </Paper>
   );
 
