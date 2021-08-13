@@ -6,10 +6,10 @@ services:
     labels:
       - "traefik.enable=true"
 
-      - "traefik.http.routers.opengrok.rule=Host(`hist-175.johncunniff.dev`)"
-      - "traefik.http.routers.opengrok.entrypoints=https"
-      - "traefik.http.routers.opengrok.tls.certresolver=tls"
-      - "traefik.http.services.opengrok.loadbalancer.server.port=3000"
+      - "traefik.http.routers.histproj.rule=Host(`hist-175.johncunniff.dev`)"
+      - "traefik.http.routers.histproj.entrypoints=https"
+      - "traefik.http.routers.histproj.tls.certresolver=tls"
+      - "traefik.http.services.histproj.loadbalancer.server.port=3000"
     networks:
       - traefik-proxy
 
