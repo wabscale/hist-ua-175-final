@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  hist_report:
+    build: report
+    labels:
+      - "traefik.enable=true"
+
+      - "traefik.http.routers.opengrok.rule=Host(`hist-175.johncunniff.dev`)"
+      - "traefik.http.routers.opengrok.entrypoints=https"
+      - "traefik.http.routers.opengrok.tls.certresolver=tls"
+      - "traefik.http.services.opengrok.loadbalancer.server.port=3000"
+    networks:
+      - traefik-proxy
+
+networks:
+  traefik-proxy:
+    external:
+      name: traefik-proxy
