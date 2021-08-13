@@ -47,7 +47,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
   },
   body: {
-    margin: theme.spacing(0, 1),
+    textIndent: theme.spacing(2),
+    margin: theme.spacing(1),
   },
 }));
 
@@ -124,7 +125,7 @@ function App() {
           </Body>
           <Body>
             One such place is the United States National Archive or NARA for short. NARA makes select immigration
-            records available, but only for people that are or would be at least 100 years of age. 
+            records available, but only for people that are or would be at least 100 years of age.
           </Body>
 
           <SubTitle>
