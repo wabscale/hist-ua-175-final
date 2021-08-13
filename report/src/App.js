@@ -5,13 +5,33 @@ import {createTheme, makeStyles, ThemeProvider} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Graph from './Graph';
+import IconButton from '@material-ui/core/IconButton';
+import {DataGrid} from '@material-ui/data-grid';
+import Paper from '@material-ui/core/Paper';
+
+import filtered_data from './filtered_data.json';
 import new_york_graph from './new_york_graph.json';
+
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkIcon from '@material-ui/icons/Link';
+import GetAppIcon from '@material-ui/icons/GetApp';
+
+function downloadTextFile(filename, text, content_type) {
+  const element = document.createElement('a');
+  element.hidden = true;
+  const file = new Blob([text], {type: content_type});
+  element.href = URL.createObjectURL(file);
+  element.download = filename;
+  document.body.appendChild(element);
+  element.click();
+}
+
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color="inherit" href="https://github.com/wabscale">
         John Cunniff
       </Link>{' '}
       {new Date().getFullYear()}
@@ -50,14 +70,27 @@ const useStyles = makeStyles((theme) => ({
     textIndent: theme.spacing(2),
     margin: theme.spacing(1),
   },
+  linkIcon: {
+    padding: theme.spacing(1),
+  },
+  dataPaper: {
+    padding: theme.spacing(1),
+    height: 700,
+  },
 }));
 
 function SubTitle({children}) {
   const classes = useStyles();
+  const id = children.toString().toLowerCase().replaceAll(' ', '_');
   return (
-    <Typography variant={'h4'} className={classes.subtitle}>
-      {children}
-    </Typography>
+    <div style={{display: 'flex', alignItems: 'center'}} className={classes.subtitle}>
+      <IconButton size={'small'} href={'#' + id} className={classes.linkIcon}>
+        <LinkIcon/>
+      </IconButton>
+      <Typography variant={'h4'} id={id}>
+        {children}
+      </Typography>
+    </div>
   );
 }
 
@@ -125,8 +158,35 @@ function App() {
           </Body>
           <Body>
             One such place is the United States National Archive or NARA for short. NARA makes select immigration
-            records available, but only for people that are or would be at least 100 years of age.
+            records available, but only for people that are or would be at least 100 years of age. Much of
+            the data that is available is still very incomplete. Some records may have a country of origin,
+            but no port of entry for example.
           </Body>
+
+          <div style={{display: 'flex', alignItems: 'center', marginTop: 20}}>
+            <IconButton
+              onClick={() => downloadTextFile('filtered_data.json', filtered_data, 'application/json')}
+            >
+              <GetAppIcon/>
+            </IconButton>
+            <Typography variant={'body2'}>
+              Download Full Data
+            </Typography>
+          </div>
+          <Paper className={classes.dataPaper}>
+            <DataGrid
+              columns={[
+                {field: 'name', width: 140, headerName: 'Name'},
+                {field: 'anum', width: 150, headerName: 'A Number'},
+                {field: 'naturalization location', width: 180, headerName: 'Nat. Location'},
+                {field: 'naturalization date', width: 180, type: 'date', headerName: 'Nat. Date'},
+                {field: 'country', width: 200, headerName: 'Country of Origin'},
+              ]}
+              rows={filtered_data}
+              pageSize={25}
+              rowsPerPageOptions={[25, 50, 100]}
+            />
+          </Paper>
 
           <SubTitle>
             Graph Analysis
@@ -139,11 +199,59 @@ function App() {
           </Body>
           <Body>
             For this problem the topology of the graph that we want to create is the most important thing. The topology
-            is just the layout. It is deciding what becomes a node, and what becomes a connection.
+            is just the layout. It is deciding what becomes a node, and what becomes a connection. If we
+            construct the graph in such a way, we can run common algorithms to find patterns in the data.
           </Body>
           <Body>
-            There are several valid options for the topology of the graph
+            The main form of analysis that could help fill in gaps in the data is something called community
+            detection. The objective of community detection is to find groupings of nodes within the graph
+            structure. This is how places like facebook can determine who are in groups on their platform.
           </Body>
+
+          <SubTitle>
+            The Theory
+          </SubTitle>
+          <Body>
+            The theory is that we can use what we know about sequential A numbers and graph analysis to
+            fill in gaps in the data with some degree of certainty. Unfortunately this did not work out
+            so well. The main problem is the data itself. The whole theory rests upon the idea that we
+            have sequential A numbers to analyze. The reality is that with the data available, there are
+            huge gaps in the A number values. There may be thousands of A numbers between one and the next.
+          </Body>
+          <Body>
+            For this analysis to have worked, I would have needed a much more complete dataset. It is not
+            so much a matter of the size of the dataset, but rather the A numbers within it. If I had
+            even a few stretches of sequential A numbers, I could start to fill in the unknowns.
+          </Body>
+
+          <SubTitle>
+            First Attempt - Community Detection
+          </SubTitle>
+          <Body>
+            The most naive approach to the problem is to create a graph with all A numbers connected to
+            the next one in a long line, then connect the A number to their naturalization location.
+            We could take this structure and run basic community detection algorithms to get groupings of
+            people with close A numbers, and common locations.
+          </Body>
+          <Body>
+            An example of this topology can be seen below. We have 5 A numbers in blue in a line. Each
+            one is pointing to the next greatest A number in the data.
+          </Body>
+          <Graph
+            title={"Sequential Sample"}
+            data={{
+              nodes: [
+                {id: 1, type: 'anum'}, {id: 2, type: 'anum'}, {id: 3, type: 'anum'},
+                {id: 4, type: 'anum'}, {id: 5, type: 'anum'},
+                {id: 'New York', type: 'location'}, {id: 'San Francisco', type: 'location'},
+              ],
+              links: [
+                {source: 1, target: 2}, {source: 2, target: 3}, {source: 3, target: 4}, {source: 4, target: 5},
+                {source: 1, target: 'New York'}, {source: 2, target: 'New York'}, {source: 3, target: 'New York'},
+                {source: 4, target: 'San Francisco'}, {source: 5, target: 'San Francisco'},
+              ],
+            }}
+          />
 
           <Graph
             title={'New York Graph'}
@@ -161,9 +269,20 @@ function App() {
 
         <footer className={classes.footer}>
           <Container maxWidth="sm">
-            <Typography variant="body1">
-              My sticky footer can be found here.
-            </Typography>
+            <div style={{display: 'flex', alignItems: 'center'}}>
+              <IconButton
+                size={'small'}
+                className={classes.linkIcon}
+                href={'https://github.com/wabscale/hist-ua-175-final'}
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <GitHubIcon/>
+              </IconButton>
+              <Typography variant="body1">
+                Source is on GitHub
+              </Typography>
+            </div>
             <Copyright/>
           </Container>
         </footer>

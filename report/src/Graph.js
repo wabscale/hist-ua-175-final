@@ -47,23 +47,58 @@ const graphIt = (data) => (svg) => {
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-  const link = svg.append("g")
-    .attr("stroke", "#999")
-    .attr("stroke-opacity", 0.6)
-    .selectAll("line")
-    .data(links)
-    .join("line")
-    .attr("stroke-width", d => Math.sqrt(d.value));
+  svg.append('svg:defs').append('svg:marker')
+      .attr('id', 'triangle')
+      .attr('viewBox', '0 -5 10 10')
+      .attr('refX', 15)
+      .attr('refY', -0.5)
+      .attr('markerWidth', 6)
+      .attr('markerHeight', 6)
+      .attr('orient', 'auto')
+      .append('path')
+      .attr('d', 'M 0,-5L10,0L0,5')
+      .style('fill', '#aaa');
 
-  const node = svg.append("g")
-    .attr("stroke", "#fff")
-    .attr("stroke-width", 1.5)
-    .selectAll("circle")
-    .data(nodes)
-    .join("circle")
-    .attr("r", 5)
-    .attr("fill", color)
-    .call(drag(simulation));
+  const link = svg.append('g')
+      .attr('stroke', '#aaa')
+      .attr('stroke-opacity', 0.6)
+      .selectAll('line')
+      .data(links)
+      .join('line')
+      .attr('stroke-width', (d) => Math.sqrt(d.depth))
+      .attr('marker-end', 'url(#triangle)');
+
+  const node = svg.append('g')
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 1.5)
+      .selectAll('circle')
+      .data(nodes)
+      .join('circle')
+      .attr('id', (d) => d.id)
+      .attr('r', 5)
+      .attr('class', 'graph-node')
+      .attr('fill', color)
+      .call(drag(simulation));
+
+
+
+  // const link = svg.append("g")
+  //   .attr("stroke", "#999")
+  //   .attr("stroke-opacity", 0.6)
+  //   .selectAll("line")
+  //   .data(links)
+  //   .join("line")
+  //   .attr("stroke-width", d => Math.sqrt(d.value));
+  //
+  // const node = svg.append("g")
+  //   .attr("stroke", "#fff")
+  //   .attr("stroke-width", 1.5)
+  //   .selectAll("circle")
+  //   .data(nodes)
+  //   .join("circle")
+  //   .attr("r", 5)
+  //   .attr("fill", color)
+  //   .call(drag(simulation));
 
   node.append("title")
     .text(d => d.id);
