@@ -40,16 +40,6 @@
     "id": 3
   },
   {
-    "country": "Denmark",
-    "port of entry": "new york",
-    "date of entry": "1905-05-01",
-    "name": "Henry Mickelson",
-    "naturalization date": "1945-11-27",
-    "naturalization location": "pittsburgh",
-    "anum": 1536271,
-    "id": 4
-  },
-  {
     "country": "Norway",
     "port of entry": "new york",
     "date of entry": "1919-07-31",
@@ -57,7 +47,7 @@
     "naturalization date": "1943-06-22",
     "naturalization location": "new york",
     "anum": 1621631,
-    "id": 5
+    "id": 4
   },
   {
     "country": "Italy",
@@ -67,17 +57,7 @@
     "naturalization date": "1941-07-07",
     "naturalization location": "detroit",
     "anum": 1638033,
-    "id": 6
-  },
-  {
-    "country": "Unknown",
-    "port of entry": "newark and teterboro",
-    "date of entry": "1945-03-14",
-    "name": "Mary Raskulin",
-    "naturalization date": "1945-03-14",
-    "naturalization location": "newark",
-    "anum": 1645477,
-    "id": 7
+    "id": 5
   },
   {
     "country": "Unknown",
@@ -87,7 +67,7 @@
     "naturalization date": "1944-06-15",
     "naturalization location": "newark",
     "anum": 1645490,
-    "id": 8
+    "id": 6
   },
   {
     "country": "Cuba",
@@ -97,7 +77,7 @@
     "naturalization date": "1944-03-23",
     "naturalization location": "chicago",
     "anum": 1708343,
-    "id": 9
+    "id": 7
   },
   {
     "country": "Mexico",
@@ -107,7 +87,7 @@
     "naturalization date": "1943-04-01",
     "naturalization location": "chicago",
     "anum": 1747879,
-    "id": 10
+    "id": 8
   },
   {
     "country": "Poland",
@@ -117,7 +97,7 @@
     "naturalization date": "1941-05-14",
     "naturalization location": "detroit",
     "anum": 1784735,
-    "id": 11
+    "id": 9
   },
   {
     "country": "Poland",
@@ -127,7 +107,7 @@
     "naturalization date": "1940-07-01",
     "naturalization location": "detroit",
     "anum": 1826273,
-    "id": 12
+    "id": 10
   },
   {
     "country": "Germany",
@@ -137,27 +117,7 @@
     "naturalization date": "1944-04-21",
     "naturalization location": "denver",
     "anum": 1875945,
-    "id": 13
-  },
-  {
-    "country": "Canada",
-    "port of entry": "unknown",
-    "date of entry": "1905-09-27",
-    "name": "Rose Bradbury",
-    "naturalization date": "1945-05-28",
-    "naturalization location": "boston",
-    "anum": 1915949,
-    "id": 14
-  },
-  {
-    "country": "Germany",
-    "port of entry": "",
-    "date of entry": null,
-    "name": "Carl Nemzow",
-    "naturalization date": "1945-04-06",
-    "naturalization location": "newark",
-    "anum": 1927827,
-    "id": 15
+    "id": 11
   },
   {
     "country": "Italy",
@@ -167,7 +127,7 @@
     "naturalization date": "1940-06-06",
     "naturalization location": "new york",
     "anum": 1974590,
-    "id": 16
+    "id": 12
   },
   {
     "country": "Hungary",
@@ -177,27 +137,7 @@
     "naturalization date": "1943-09-27",
     "naturalization location": "detroit",
     "anum": 1980303,
-    "id": 17
-  },
-  {
-    "country": "Canada",
-    "port of entry": "blaine",
-    "date of entry": "1962-09-06",
-    "name": "Marie Habershon",
-    "naturalization date": "1945-05-14",
-    "naturalization location": "los angeles",
-    "anum": 2016380,
-    "id": 18
-  },
-  {
-    "country": "Austria",
-    "port of entry": "new york",
-    "date of entry": "1940-01-17",
-    "name": "Clara Graeffe",
-    "naturalization date": "1945-11-26",
-    "naturalization location": "new york",
-    "anum": 2036904,
-    "id": 19
+    "id": 13
   },
   {
     "country": "Germany",
@@ -207,7 +147,7 @@
     "naturalization date": "1944-01-05",
     "naturalization location": "seattle",
     "anum": 2114589,
-    "id": 20
+    "id": 14
   },
   {
     "country": "Italy",
@@ -217,7 +157,7 @@
     "naturalization date": "1944-12-04",
     "naturalization location": "detroit",
     "anum": 2164784,
-    "id": 21
+    "id": 15
   },
   {
     "country": "Bulgaria",
@@ -227,17 +167,7 @@
     "naturalization date": "1940-11-18",
     "naturalization location": "pittsburgh",
     "anum": 2165344,
-    "id": 22
-  },
-  {
-    "country": "Unknown",
-    "port of entry": "dallas",
-    "date of entry": "1945-11-26",
-    "name": "Manuel Sabedra",
-    "naturalization date": "1945-11-26",
-    "naturalization location": "dallas",
-    "anum": 2199286,
-    "id": 23
+    "id": 16
   },
   {
     "country": "Poland",
@@ -247,7 +177,7 @@
     "naturalization date": "1944-04-24",
     "naturalization location": "albany",
     "anum": 2226760,
-    "id": 24
+    "id": 17
   },
   {
     "country": "Austria",
@@ -257,7 +187,7 @@
     "naturalization date": "1940-04-10",
     "naturalization location": "new york",
     "anum": 2236053,
-    "id": 25
+    "id": 18
   },
   {
     "country": "Ireland",
@@ -267,7 +197,7 @@
     "naturalization date": "1943-09-01",
     "naturalization location": "newark",
     "anum": 2324912,
-    "id": 26
+    "id": 19
   },
   {
     "country": "Mexico",
@@ -277,7 +207,7 @@
     "naturalization date": "1944-03-22",
     "naturalization location": "los angeles",
     "anum": 2349558,
-    "id": 27
+    "id": 20
   },
   {
     "country": "United Kingdom",
@@ -287,7 +217,7 @@
     "naturalization date": "1940-12-23",
     "naturalization location": "providence",
     "anum": 2352419,
-    "id": 28
+    "id": 21
   },
   {
     "country": "Colombia",
@@ -297,7 +227,7 @@
     "naturalization date": "1943-12-09",
     "naturalization location": "new york",
     "anum": 2386002,
-    "id": 29
+    "id": 22
   },
   {
     "country": "Russia",
@@ -307,7 +237,7 @@
     "naturalization date": "1943-04-28",
     "naturalization location": "philadelhia",
     "anum": 2404094,
-    "id": 30
+    "id": 23
   },
   {
     "country": "Poland",
@@ -317,7 +247,7 @@
     "naturalization date": "1944-04-27",
     "naturalization location": "newark",
     "anum": 2418191,
-    "id": 31
+    "id": 24
   },
   {
     "country": "United Kingdom",
@@ -327,7 +257,7 @@
     "naturalization date": "1940-12-20",
     "naturalization location": "pittsburgh",
     "anum": 2433938,
-    "id": 32
+    "id": 25
   },
   {
     "country": "United Kingdom",
@@ -337,7 +267,7 @@
     "naturalization date": "1943-05-28",
     "naturalization location": "los angeles",
     "anum": 2523227,
-    "id": 33
+    "id": 26
   },
   {
     "country": "Poland",
@@ -347,17 +277,7 @@
     "naturalization date": "1940-12-16",
     "naturalization location": "philadelhia",
     "anum": 2528023,
-    "id": 34
-  },
-  {
-    "country": "United Kingdom",
-    "port of entry": "unknown",
-    "date of entry": "1914-02-28",
-    "name": "Alexander Fraser",
-    "naturalization date": "1945-12-03",
-    "naturalization location": "new york",
-    "anum": 2552324,
-    "id": 35
+    "id": 27
   },
   {
     "country": "Italy",
@@ -367,7 +287,7 @@
     "naturalization date": "1944-12-04",
     "naturalization location": "boston",
     "anum": 2586229,
-    "id": 36
+    "id": 28
   },
   {
     "country": "Portugal",
@@ -377,7 +297,7 @@
     "naturalization date": "1942-02-23",
     "naturalization location": "atlanta",
     "anum": 2593147,
-    "id": 37
+    "id": 29
   },
   {
     "country": "Canada",
@@ -387,27 +307,7 @@
     "naturalization date": "1942-06-22",
     "naturalization location": "philadelhia",
     "anum": 2604140,
-    "id": 38
-  },
-  {
-    "country": "Canada",
-    "port of entry": "buffalo",
-    "date of entry": "1907-07-01",
-    "name": "Wanda Meinke",
-    "naturalization date": "1945-06-29",
-    "naturalization location": "cleveland",
-    "anum": 2641901,
-    "id": 39
-  },
-  {
-    "country": "Turkey",
-    "port of entry": "new york",
-    "date of entry": "1913-10-20",
-    "name": "Charles Kachadoorian",
-    "naturalization date": "1945-02-21",
-    "naturalization location": "newark",
-    "anum": 2654944,
-    "id": 40
+    "id": 30
   },
   {
     "country": "Canada",
@@ -417,7 +317,7 @@
     "naturalization date": "1941-04-28",
     "naturalization location": "detroit",
     "anum": 2672850,
-    "id": 41
+    "id": 31
   },
   {
     "country": "Poland",
@@ -427,7 +327,7 @@
     "naturalization date": "1943-11-05",
     "naturalization location": "new york",
     "anum": 2685015,
-    "id": 42
+    "id": 32
   },
   {
     "country": "Italy",
@@ -437,7 +337,7 @@
     "naturalization date": "1943-03-22",
     "naturalization location": "boston",
     "anum": 2733797,
-    "id": 43
+    "id": 33
   },
   {
     "country": "Mexico",
@@ -447,7 +347,7 @@
     "naturalization date": "1942-07-10",
     "naturalization location": "san diego",
     "anum": 2740488,
-    "id": 44
+    "id": 34
   },
   {
     "country": "Germany",
@@ -457,17 +357,7 @@
     "naturalization date": "1942-11-05",
     "naturalization location": "houston",
     "anum": 2747533,
-    "id": 45
-  },
-  {
-    "country": "Germany",
-    "port of entry": "new york",
-    "date of entry": "1940-02-21",
-    "name": "Sofie Weil",
-    "naturalization date": "1945-04-24",
-    "naturalization location": "omaha",
-    "anum": 2828547,
-    "id": 46
+    "id": 35
   },
   {
     "country": "Barbados",
@@ -477,27 +367,7 @@
     "naturalization date": "1943-12-27",
     "naturalization location": "new york",
     "anum": 2847330,
-    "id": 47
-  },
-  {
-    "country": "Poland",
-    "port of entry": "new york",
-    "date of entry": "1910-05-18",
-    "name": "Ursula Hudy",
-    "naturalization date": "1945-09-07",
-    "naturalization location": "detroit",
-    "anum": 2872516,
-    "id": 48
-  },
-  {
-    "country": "Poland",
-    "port of entry": "new york",
-    "date of entry": "1901-02-28",
-    "name": "Josephine Majka",
-    "naturalization date": "1945-06-14",
-    "naturalization location": "milwaukee",
-    "anum": 2872741,
-    "id": 49
+    "id": 36
   },
   {
     "country": "Italy",
@@ -507,7 +377,7 @@
     "naturalization date": "1944-06-21",
     "naturalization location": "newark",
     "anum": 2919740,
-    "id": 50
+    "id": 37
   },
   {
     "country": "Italy",
@@ -517,7 +387,7 @@
     "naturalization date": "1943-05-24",
     "naturalization location": "boston",
     "anum": 3004573,
-    "id": 51
+    "id": 38
   },
   {
     "country": "Germany",
@@ -527,7 +397,7 @@
     "naturalization date": "1943-04-06",
     "naturalization location": "san francisco",
     "anum": 3005151,
-    "id": 52
+    "id": 39
   },
   {
     "country": "Italy",
@@ -537,7 +407,7 @@
     "naturalization date": "1942-06-09",
     "naturalization location": "central office",
     "anum": 3007209,
-    "id": 53
+    "id": 40
   },
   {
     "country": "Germany",
@@ -547,17 +417,7 @@
     "naturalization date": "1943-10-21",
     "naturalization location": "portland",
     "anum": 3065099,
-    "id": 54
-  },
-  {
-    "country": "Germany",
-    "port of entry": "miami",
-    "date of entry": "1940-03-16",
-    "name": "Fritz Baer",
-    "naturalization date": "1945-11-19",
-    "naturalization location": "new york",
-    "anum": 3067200,
-    "id": 55
+    "id": 41
   },
   {
     "country": "Austria",
@@ -567,17 +427,7 @@
     "naturalization date": "1944-11-09",
     "naturalization location": "houston",
     "anum": 3104470,
-    "id": 56
-  },
-  {
-    "country": "Italy",
-    "port of entry": "new york",
-    "date of entry": "1913-10-24",
-    "name": "Michael Molfetta",
-    "naturalization date": "1945-01-10",
-    "naturalization location": "los angeles",
-    "anum": 3137360,
-    "id": 57
+    "id": 42
   },
   {
     "country": "Germany",
@@ -587,7 +437,7 @@
     "naturalization date": "1944-07-13",
     "naturalization location": "new york",
     "anum": 3154983,
-    "id": 58
+    "id": 43
   },
   {
     "country": "Italy",
@@ -597,27 +447,7 @@
     "naturalization date": "1941-04-18",
     "naturalization location": "milwaukee",
     "anum": 3221480,
-    "id": 59
-  },
-  {
-    "country": "Germany",
-    "port of entry": "",
-    "date of entry": null,
-    "name": "Adolf Heinsheimer",
-    "naturalization date": "1945-04-05",
-    "naturalization location": "philadelhia",
-    "anum": 3224156,
-    "id": 60
-  },
-  {
-    "country": "Italy",
-    "port of entry": "new york",
-    "date of entry": "1903-08-19",
-    "name": "Stefano Maiorano",
-    "naturalization date": "1945-01-08",
-    "naturalization location": "new york",
-    "anum": 3226837,
-    "id": 61
+    "id": 44
   },
   {
     "country": "Germany",
@@ -627,7 +457,7 @@
     "naturalization date": "1944-03-31",
     "naturalization location": "cleveland",
     "anum": 3257244,
-    "id": 62
+    "id": 45
   },
   {
     "country": "Hungary",
@@ -637,7 +467,7 @@
     "naturalization date": "1944-05-15",
     "naturalization location": "detroit",
     "anum": 3266472,
-    "id": 63
+    "id": 46
   },
   {
     "country": "Russia",
@@ -647,7 +477,7 @@
     "naturalization date": "1944-07-14",
     "naturalization location": "cleveland",
     "anum": 3274967,
-    "id": 64
+    "id": 47
   },
   {
     "country": "Russia",
@@ -657,7 +487,7 @@
     "naturalization date": "1944-06-26",
     "naturalization location": "new york",
     "anum": 3292058,
-    "id": 65
+    "id": 48
   },
   {
     "country": "Unknown",
@@ -667,7 +497,7 @@
     "naturalization date": "1942-02-11",
     "naturalization location": "chicago",
     "anum": 3294623,
-    "id": 66
+    "id": 49
   },
   {
     "country": "Unknown",
@@ -677,7 +507,7 @@
     "naturalization date": "1943-03-19",
     "naturalization location": "chicago",
     "anum": 3294800,
-    "id": 67
+    "id": 50
   },
   {
     "country": "Italy",
@@ -687,7 +517,7 @@
     "naturalization date": "1944-11-27",
     "naturalization location": "boston",
     "anum": 3300698,
-    "id": 68
+    "id": 51
   },
   {
     "country": "Unknown",
@@ -697,7 +527,7 @@
     "naturalization date": "1944-12-14",
     "naturalization location": "cleveland",
     "anum": 3341973,
-    "id": 69
+    "id": 52
   },
   {
     "country": "Germany",
@@ -707,7 +537,7 @@
     "naturalization date": "1944-08-22",
     "naturalization location": "new york",
     "anum": 3381543,
-    "id": 70
+    "id": 53
   },
   {
     "country": "Canada",
@@ -717,7 +547,7 @@
     "naturalization date": "1943-02-15",
     "naturalization location": "national records center",
     "anum": 3381967,
-    "id": 71
+    "id": 54
   },
   {
     "country": "Mexico",
@@ -727,7 +557,7 @@
     "naturalization date": "1944-05-04",
     "naturalization location": "houston",
     "anum": 3416141,
-    "id": 72
+    "id": 55
   },
   {
     "country": "Norway",
@@ -737,7 +567,7 @@
     "naturalization date": "1943-08-27",
     "naturalization location": "los angeles",
     "anum": 3449761,
-    "id": 73
+    "id": 56
   },
   {
     "country": "Germany",
@@ -747,7 +577,7 @@
     "naturalization date": "1943-08-25",
     "naturalization location": "los angeles",
     "anum": 3458037,
-    "id": 74
+    "id": 57
   },
   {
     "country": "United Kingdom",
@@ -757,7 +587,7 @@
     "naturalization date": "1943-11-08",
     "naturalization location": "new york",
     "anum": 3459245,
-    "id": 75
+    "id": 58
   },
   {
     "country": "Germany",
@@ -767,7 +597,7 @@
     "naturalization date": "1940-12-16",
     "naturalization location": "new york",
     "anum": 3465367,
-    "id": 76
+    "id": 59
   },
   {
     "country": "Germany",
@@ -777,7 +607,7 @@
     "naturalization date": "1943-10-11",
     "naturalization location": "philadelhia",
     "anum": 3469603,
-    "id": 77
+    "id": 60
   },
   {
     "country": "Italy",
@@ -787,7 +617,7 @@
     "naturalization date": "1943-02-05",
     "naturalization location": "miami",
     "anum": 3469695,
-    "id": 78
+    "id": 61
   },
   {
     "country": "Lithuania",
@@ -797,7 +627,7 @@
     "naturalization date": "1940-12-19",
     "naturalization location": "new york",
     "anum": 3490859,
-    "id": 79
+    "id": 62
   },
   {
     "country": "Canada",
@@ -807,7 +637,7 @@
     "naturalization date": "1940-10-02",
     "naturalization location": "hartford",
     "anum": 3493428,
-    "id": 80
+    "id": 63
   },
   {
     "country": "Italy",
@@ -817,7 +647,7 @@
     "naturalization date": "1941-04-14",
     "naturalization location": "baltimore",
     "anum": 3502303,
-    "id": 81
+    "id": 64
   },
   {
     "country": "Denmark",
@@ -827,7 +657,7 @@
     "naturalization date": "1943-04-21",
     "naturalization location": "baltimore",
     "anum": 3504703,
-    "id": 82
+    "id": 65
   },
   {
     "country": "United Kingdom",
@@ -837,7 +667,7 @@
     "naturalization date": "1943-06-05",
     "naturalization location": "louisville",
     "anum": 3509640,
-    "id": 83
+    "id": 66
   },
   {
     "country": "Ireland",
@@ -847,7 +677,7 @@
     "naturalization date": "1943-10-25",
     "naturalization location": "boston",
     "anum": 3509666,
-    "id": 84
+    "id": 67
   },
   {
     "country": "Canada",
@@ -857,7 +687,7 @@
     "naturalization date": "1943-08-02",
     "naturalization location": "phoenix",
     "anum": 3544637,
-    "id": 85
+    "id": 68
   },
   {
     "country": "Netherlands",
@@ -867,7 +697,7 @@
     "naturalization date": "1941-01-07",
     "naturalization location": "chicago",
     "anum": 3554913,
-    "id": 86
+    "id": 69
   },
   {
     "country": "Spain",
@@ -877,7 +707,7 @@
     "naturalization date": "1940-12-23",
     "naturalization location": "san francisco",
     "anum": 3565839,
-    "id": 87
+    "id": 70
   },
   {
     "country": "Mexico",
@@ -887,7 +717,7 @@
     "naturalization date": "1943-05-21",
     "naturalization location": "milwaukee",
     "anum": 3577072,
-    "id": 88
+    "id": 71
   },
   {
     "country": "Italy",
@@ -897,7 +727,7 @@
     "naturalization date": "1944-12-11",
     "naturalization location": "new york",
     "anum": 3586602,
-    "id": 89
+    "id": 72
   },
   {
     "country": "Czechoslovakia",
@@ -907,7 +737,7 @@
     "naturalization date": "1941-07-11",
     "naturalization location": "chicago",
     "anum": 3587729,
-    "id": 90
+    "id": 73
   },
   {
     "country": "Germany",
@@ -917,7 +747,7 @@
     "naturalization date": "1941-11-05",
     "naturalization location": "chicago",
     "anum": 3590791,
-    "id": 91
+    "id": 74
   },
   {
     "country": "United Kingdom",
@@ -927,7 +757,7 @@
     "naturalization date": "1943-06-22",
     "naturalization location": "philadelhia",
     "anum": 3591196,
-    "id": 92
+    "id": 75
   },
   {
     "country": "Russia",
@@ -937,7 +767,7 @@
     "naturalization date": "1943-08-07",
     "naturalization location": "boston",
     "anum": 3602247,
-    "id": 93
+    "id": 76
   },
   {
     "country": "Mexico",
@@ -947,7 +777,7 @@
     "naturalization date": "1942-12-15",
     "naturalization location": "new orleans",
     "anum": 3607504,
-    "id": 94
+    "id": 77
   },
   {
     "country": "Poland",
@@ -957,7 +787,7 @@
     "naturalization date": "1943-03-20",
     "naturalization location": "philadelhia",
     "anum": 3609303,
-    "id": 95
+    "id": 78
   },
   {
     "country": "Hungary",
@@ -967,7 +797,7 @@
     "naturalization date": "1940-11-20",
     "naturalization location": "indianapolis",
     "anum": 3616012,
-    "id": 96
+    "id": 79
   },
   {
     "country": "Hungary",
@@ -977,7 +807,7 @@
     "naturalization date": "1942-08-20",
     "naturalization location": "philadelhia",
     "anum": 3619160,
-    "id": 97
+    "id": 80
   },
   {
     "country": "Austria",
@@ -987,7 +817,7 @@
     "naturalization date": "1942-12-11",
     "naturalization location": "cincinnati",
     "anum": 3622562,
-    "id": 98
+    "id": 81
   },
   {
     "country": "Trinidad And Tobago",
@@ -997,7 +827,7 @@
     "naturalization date": "1943-04-24",
     "naturalization location": "new orleans",
     "anum": 3629438,
-    "id": 99
+    "id": 82
   },
   {
     "country": "Italy",
@@ -1007,7 +837,7 @@
     "naturalization date": "1944-05-26",
     "naturalization location": "hartford",
     "anum": 3633905,
-    "id": 100
+    "id": 83
   },
   {
     "country": "Canada",
@@ -1017,7 +847,7 @@
     "naturalization date": "1943-04-16",
     "naturalization location": "los angeles",
     "anum": 3634776,
-    "id": 101
+    "id": 84
   },
   {
     "country": "Canada",
@@ -1027,7 +857,7 @@
     "naturalization date": "1943-02-22",
     "naturalization location": "los angeles",
     "anum": 3639268,
-    "id": 102
+    "id": 85
   },
   {
     "country": "Germany",
@@ -1037,7 +867,7 @@
     "naturalization date": "1941-03-21",
     "naturalization location": "cleveland",
     "anum": 3656860,
-    "id": 103
+    "id": 86
   },
   {
     "country": "Canada",
@@ -1047,7 +877,7 @@
     "naturalization date": "1940-11-25",
     "naturalization location": "boston",
     "anum": 3659645,
-    "id": 104
+    "id": 87
   },
   {
     "country": "Italy",
@@ -1057,7 +887,7 @@
     "naturalization date": "1940-11-15",
     "naturalization location": "philadelhia",
     "anum": 3665236,
-    "id": 105
+    "id": 88
   },
   {
     "country": "Canada",
@@ -1067,7 +897,7 @@
     "naturalization date": "1943-09-28",
     "naturalization location": "san francisco",
     "anum": 3672974,
-    "id": 106
+    "id": 89
   },
   {
     "country": "Hungary",
@@ -1077,7 +907,7 @@
     "naturalization date": "1941-12-10",
     "naturalization location": "cincinnati",
     "anum": 3709694,
-    "id": 107
+    "id": 90
   },
   {
     "country": "Ireland",
@@ -1087,7 +917,7 @@
     "naturalization date": "1940-12-11",
     "naturalization location": "philadelhia",
     "anum": 3716741,
-    "id": 108
+    "id": 91
   },
   {
     "country": "Austria",
@@ -1097,7 +927,7 @@
     "naturalization date": "1940-12-03",
     "naturalization location": "cleveland",
     "anum": 3729639,
-    "id": 109
+    "id": 92
   },
   {
     "country": "Hungary",
@@ -1107,7 +937,7 @@
     "naturalization date": "1944-10-16",
     "naturalization location": "san francisco",
     "anum": 3730328,
-    "id": 110
+    "id": 93
   },
   {
     "country": "Italy",
@@ -1117,17 +947,7 @@
     "naturalization date": "1943-06-28",
     "naturalization location": "seattle",
     "anum": 3774257,
-    "id": 111
-  },
-  {
-    "country": "Germany",
-    "port of entry": "new york",
-    "date of entry": "1938-12-15",
-    "name": "Victor Adler",
-    "naturalization date": "1945-01-29",
-    "naturalization location": "new york",
-    "anum": 3786282,
-    "id": 112
+    "id": 94
   },
   {
     "country": "Italy",
@@ -1137,17 +957,7 @@
     "naturalization date": "1944-11-28",
     "naturalization location": "chicago",
     "anum": 3807003,
-    "id": 113
-  },
-  {
-    "country": "Austria",
-    "port of entry": "new york",
-    "date of entry": "1939-12-30",
-    "name": "Frieda Schargel",
-    "naturalization date": "1945-05-21",
-    "naturalization location": "new york",
-    "anum": 3815255,
-    "id": 114
+    "id": 95
   },
   {
     "country": "Italy",
@@ -1157,17 +967,7 @@
     "naturalization date": "1944-05-22",
     "naturalization location": "hartford",
     "anum": 3821130,
-    "id": 115
-  },
-  {
-    "country": "Italy",
-    "port of entry": "unknown",
-    "date of entry": "1907-08-30",
-    "name": "Charles Ippolito",
-    "naturalization date": "1945-08-28",
-    "naturalization location": "buffalo",
-    "anum": 3821997,
-    "id": 116
+    "id": 96
   },
   {
     "country": "Poland",
@@ -1177,7 +977,7 @@
     "naturalization date": "1943-08-20",
     "naturalization location": "atlanta",
     "anum": 3831424,
-    "id": 117
+    "id": 97
   },
   {
     "country": "Italy",
@@ -1187,17 +987,7 @@
     "naturalization date": "1944-06-07",
     "naturalization location": "newark",
     "anum": 3857095,
-    "id": 118
-  },
-  {
-    "country": "Poland",
-    "port of entry": "new york",
-    "date of entry": "1938-04-14",
-    "name": "Herman Shoenman",
-    "naturalization date": "1945-04-09",
-    "naturalization location": "new york",
-    "anum": 3922384,
-    "id": 119
+    "id": 98
   },
   {
     "country": "Greece",
@@ -1207,7 +997,7 @@
     "naturalization date": "1940-12-05",
     "naturalization location": "philadelhia",
     "anum": 3948664,
-    "id": 120
+    "id": 99
   },
   {
     "country": "Sweden",
@@ -1217,7 +1007,7 @@
     "naturalization date": "1944-01-19",
     "naturalization location": "new york",
     "anum": 3956883,
-    "id": 121
+    "id": 100
   },
   {
     "country": "Austria",
@@ -1227,7 +1017,7 @@
     "naturalization date": "1944-02-15",
     "naturalization location": "new york",
     "anum": 3970258,
-    "id": 122
+    "id": 101
   },
   {
     "country": "Germany",
@@ -1237,7 +1027,7 @@
     "naturalization date": "1944-04-20",
     "naturalization location": "new york",
     "anum": 3979881,
-    "id": 123
+    "id": 102
   },
   {
     "country": "Germany",
@@ -1247,17 +1037,7 @@
     "naturalization date": "1944-12-21",
     "naturalization location": "st. paul",
     "anum": 3985228,
-    "id": 124
-  },
-  {
-    "country": "United Kingdom",
-    "port of entry": "unknown",
-    "date of entry": "1923-06-06",
-    "name": "Alexander Russell",
-    "naturalization date": "1945-08-23",
-    "naturalization location": "new york",
-    "anum": 3989312,
-    "id": 125
+    "id": 103
   },
   {
     "country": "Germany",
@@ -1267,7 +1047,7 @@
     "naturalization date": "1944-02-24",
     "naturalization location": "new york",
     "anum": 4007813,
-    "id": 126
+    "id": 104
   },
   {
     "country": "Austria",
@@ -1277,7 +1057,7 @@
     "naturalization date": "1944-08-03",
     "naturalization location": "new york",
     "anum": 4026340,
-    "id": 127
+    "id": 105
   },
   {
     "country": "Russia",
@@ -1287,7 +1067,7 @@
     "naturalization date": "1941-01-10",
     "naturalization location": "los angeles",
     "anum": 4043557,
-    "id": 128
+    "id": 106
   },
   {
     "country": "Russia",
@@ -1297,7 +1077,7 @@
     "naturalization date": "1940-10-04",
     "naturalization location": "newark",
     "anum": 4045590,
-    "id": 129
+    "id": 107
   },
   {
     "country": "Italy",
@@ -1307,7 +1087,7 @@
     "naturalization date": "1940-12-19",
     "naturalization location": "pittsburgh",
     "anum": 4055307,
-    "id": 130
+    "id": 108
   },
   {
     "country": "Germany",
@@ -1317,7 +1097,7 @@
     "naturalization date": "1944-08-30",
     "naturalization location": "philadelhia",
     "anum": 4058726,
-    "id": 131
+    "id": 109
   },
   {
     "country": "Germany",
@@ -1327,7 +1107,7 @@
     "naturalization date": "1940-12-23",
     "naturalization location": "new york",
     "anum": 4083609,
-    "id": 132
+    "id": 110
   },
   {
     "country": "Italy",
@@ -1337,7 +1117,7 @@
     "naturalization date": "1944-03-27",
     "naturalization location": "hartford",
     "anum": 4084172,
-    "id": 133
+    "id": 111
   },
   {
     "country": "Italy",
@@ -1347,7 +1127,7 @@
     "naturalization date": "1944-03-31",
     "naturalization location": "cleveland",
     "anum": 4084239,
-    "id": 134
+    "id": 112
   },
   {
     "country": "Germany",
@@ -1357,7 +1137,7 @@
     "naturalization date": "1941-09-22",
     "naturalization location": "detroit",
     "anum": 4112827,
-    "id": 135
+    "id": 113
   },
   {
     "country": "Germany",
@@ -1367,7 +1147,7 @@
     "naturalization date": "1944-03-14",
     "naturalization location": "new york",
     "anum": 4118164,
-    "id": 136
+    "id": 114
   },
   {
     "country": "Germany",
@@ -1377,7 +1157,7 @@
     "naturalization date": "1944-03-21",
     "naturalization location": "new york",
     "anum": 4118210,
-    "id": 137
+    "id": 115
   },
   {
     "country": "Italy",
@@ -1387,7 +1167,7 @@
     "naturalization date": "1944-06-14",
     "naturalization location": "hartford",
     "anum": 4119963,
-    "id": 138
+    "id": 116
   },
   {
     "country": "listed as",
@@ -1397,7 +1177,7 @@
     "naturalization date": "1944-02-24",
     "naturalization location": "new york",
     "anum": 4122397,
-    "id": 139
+    "id": 117
   },
   {
     "country": "Canada",
@@ -1407,7 +1187,7 @@
     "naturalization date": "1941-01-07",
     "naturalization location": "washington",
     "anum": 4128621,
-    "id": 140
+    "id": 118
   },
   {
     "country": "Italy",
@@ -1417,7 +1197,7 @@
     "naturalization date": "1944-04-20",
     "naturalization location": "detroit",
     "anum": 4139104,
-    "id": 141
+    "id": 119
   },
   {
     "country": "Italy",
@@ -1427,7 +1207,7 @@
     "naturalization date": "1941-01-21",
     "naturalization location": "chicago",
     "anum": 4139552,
-    "id": 142
+    "id": 120
   },
   {
     "country": "Yugoslavia",
@@ -1437,7 +1217,7 @@
     "naturalization date": "1943-01-13",
     "naturalization location": "greer",
     "anum": 4145589,
-    "id": 143
+    "id": 121
   },
   {
     "country": "Finland",
@@ -1447,17 +1227,7 @@
     "naturalization date": "1941-03-11",
     "naturalization location": "baltimore",
     "anum": 4154638,
-    "id": 144
-  },
-  {
-    "country": "Italy",
-    "port of entry": "unknown",
-    "date of entry": "1913-11-03",
-    "name": "Francesco Sena",
-    "naturalization date": "1945-05-17",
-    "naturalization location": "new york",
-    "anum": 4155916,
-    "id": 145
+    "id": 122
   },
   {
     "country": "Germany",
@@ -1467,7 +1237,7 @@
     "naturalization date": "1941-08-28",
     "naturalization location": "chicago",
     "anum": 4168952,
-    "id": 146
+    "id": 123
   },
   {
     "country": "Canada",
@@ -1477,7 +1247,7 @@
     "naturalization date": "1940-03-11",
     "naturalization location": "boston",
     "anum": 4179074,
-    "id": 147
+    "id": 124
   },
   {
     "country": "Austria",
@@ -1487,7 +1257,7 @@
     "naturalization date": "1944-02-07",
     "naturalization location": "new york",
     "anum": 4184733,
-    "id": 148
+    "id": 125
   },
   {
     "country": "Russia",
@@ -1497,7 +1267,7 @@
     "naturalization date": "1940-11-26",
     "naturalization location": "new york",
     "anum": 4186818,
-    "id": 149
+    "id": 126
   },
   {
     "country": "Italy",
@@ -1507,7 +1277,7 @@
     "naturalization date": "1941-05-20",
     "naturalization location": "pittsburgh",
     "anum": 4188090,
-    "id": 150
+    "id": 127
   },
   {
     "country": "Italy",
@@ -1517,7 +1287,7 @@
     "naturalization date": "1940-11-25",
     "naturalization location": "new york",
     "anum": 4189244,
-    "id": 151
+    "id": 128
   },
   {
     "country": "Germany",
@@ -1527,7 +1297,7 @@
     "naturalization date": "1943-04-23",
     "naturalization location": "miami",
     "anum": 4197862,
-    "id": 152
+    "id": 129
   },
   {
     "country": "Mexico",
@@ -1537,7 +1307,7 @@
     "naturalization date": "1943-04-23",
     "naturalization location": "portland",
     "anum": 4206248,
-    "id": 153
+    "id": 130
   },
   {
     "country": "Austria",
@@ -1547,17 +1317,7 @@
     "naturalization date": "1944-08-15",
     "naturalization location": "new york",
     "anum": 4240420,
-    "id": 154
-  },
-  {
-    "country": "Italy",
-    "port of entry": "unknown",
-    "date of entry": "1907-06-07",
-    "name": "Angelo Monachino",
-    "naturalization date": "1945-03-01",
-    "naturalization location": "buffalo",
-    "anum": 4247883,
-    "id": 155
+    "id": 131
   },
   {
     "country": "Sweden",
@@ -1567,7 +1327,7 @@
     "naturalization date": "1942-11-12",
     "naturalization location": "portland",
     "anum": 4249512,
-    "id": 156
+    "id": 132
   },
   {
     "country": "Poland",
@@ -1577,7 +1337,7 @@
     "naturalization date": "1942-12-11",
     "naturalization location": "national records center",
     "anum": 4256010,
-    "id": 157
+    "id": 133
   },
   {
     "country": "Poland",
@@ -1587,7 +1347,7 @@
     "naturalization date": "1944-03-30",
     "naturalization location": "new york",
     "anum": 4258042,
-    "id": 158
+    "id": 134
   },
   {
     "country": "Greece",
@@ -1597,7 +1357,7 @@
     "naturalization date": "1940-12-20",
     "naturalization location": "boston",
     "anum": 4258575,
-    "id": 159
+    "id": 135
   },
   {
     "country": "Italy",
@@ -1607,7 +1367,7 @@
     "naturalization date": "1944-02-07",
     "naturalization location": "new york",
     "anum": 4279252,
-    "id": 160
+    "id": 136
   },
   {
     "country": "Germany",
@@ -1617,17 +1377,7 @@
     "naturalization date": "1944-07-20",
     "naturalization location": "new york",
     "anum": 4325615,
-    "id": 161
-  },
-  {
-    "country": "Austria",
-    "port of entry": "new york",
-    "date of entry": "1939-12-05",
-    "name": "Rosa Haimowitz",
-    "naturalization date": "1945-06-04",
-    "naturalization location": "new york",
-    "anum": 4331768,
-    "id": 162
+    "id": 137
   },
   {
     "country": "Russia",
@@ -1637,7 +1387,7 @@
     "naturalization date": "1943-07-10",
     "naturalization location": "philadelhia",
     "anum": 4338092,
-    "id": 163
+    "id": 138
   },
   {
     "country": "Norway",
@@ -1647,7 +1397,7 @@
     "naturalization date": "1940-12-23",
     "naturalization location": "chicago",
     "anum": 4338159,
-    "id": 164
+    "id": 139
   },
   {
     "country": "listed as",
@@ -1657,7 +1407,7 @@
     "naturalization date": "1944-07-20",
     "naturalization location": "new york",
     "anum": 4366130,
-    "id": 165
+    "id": 140
   },
   {
     "country": "Canada",
@@ -1667,7 +1417,7 @@
     "naturalization date": "1944-01-17",
     "naturalization location": "dallas",
     "anum": 4367610,
-    "id": 166
+    "id": 141
   },
   {
     "country": "United Kingdom",
@@ -1677,7 +1427,7 @@
     "naturalization date": "1943-02-18",
     "naturalization location": "seattle",
     "anum": 4403385,
-    "id": 167
+    "id": 142
   },
   {
     "country": "Russia",
@@ -1687,7 +1437,7 @@
     "naturalization date": "1942-12-04",
     "naturalization location": "new york",
     "anum": 4408291,
-    "id": 168
+    "id": 143
   },
   {
     "country": "Austria",
@@ -1697,7 +1447,7 @@
     "naturalization date": "1944-04-01",
     "naturalization location": "st. paul",
     "anum": 4418508,
-    "id": 169
+    "id": 144
   },
   {
     "country": "Australia",
@@ -1707,7 +1457,7 @@
     "naturalization date": "1941-04-11",
     "naturalization location": "los angeles",
     "anum": 4446906,
-    "id": 170
+    "id": 145
   },
   {
     "country": "Italy",
@@ -1717,7 +1467,7 @@
     "naturalization date": "1944-08-25",
     "naturalization location": "hartford",
     "anum": 4464647,
-    "id": 171
+    "id": 146
   },
   {
     "country": "Canada",
@@ -1727,7 +1477,7 @@
     "naturalization date": "1942-12-04",
     "naturalization location": "boston",
     "anum": 4479655,
-    "id": 172
+    "id": 147
   },
   {
     "country": "Netherlands",
@@ -1737,7 +1487,7 @@
     "naturalization date": "1943-02-09",
     "naturalization location": "philadelhia",
     "anum": 4484814,
-    "id": 173
+    "id": 148
   },
   {
     "country": "Poland",
@@ -1747,7 +1497,7 @@
     "naturalization date": "1943-09-24",
     "naturalization location": "charlotte",
     "anum": 4485319,
-    "id": 174
+    "id": 149
   },
   {
     "country": "Finland",
@@ -1757,7 +1507,7 @@
     "naturalization date": "1943-06-16",
     "naturalization location": "philadelhia",
     "anum": 4485696,
-    "id": 175
+    "id": 150
   },
   {
     "country": "Trinidad And Tobago",
@@ -1767,7 +1517,7 @@
     "naturalization date": "1941-06-26",
     "naturalization location": "new york",
     "anum": 4491241,
-    "id": 176
+    "id": 151
   },
   {
     "country": "Hungary",
@@ -1777,7 +1527,7 @@
     "naturalization date": "1944-03-09",
     "naturalization location": "new york",
     "anum": 4496975,
-    "id": 177
+    "id": 152
   },
   {
     "country": "Austria",
@@ -1787,7 +1537,7 @@
     "naturalization date": "1943-05-23",
     "naturalization location": "new york",
     "anum": 4501282,
-    "id": 178
+    "id": 153
   },
   {
     "country": "Germany",
@@ -1797,7 +1547,7 @@
     "naturalization date": "1940-12-17",
     "naturalization location": "new york",
     "anum": 4508755,
-    "id": 179
+    "id": 154
   },
   {
     "country": "Ireland",
@@ -1807,7 +1557,7 @@
     "naturalization date": "1941-03-25",
     "naturalization location": "chicago",
     "anum": 4519795,
-    "id": 180
+    "id": 155
   },
   {
     "country": "Sweden",
@@ -1817,7 +1567,7 @@
     "naturalization date": "1941-01-22",
     "naturalization location": "chicago",
     "anum": 4525104,
-    "id": 181
+    "id": 156
   },
   {
     "country": "Sweden",
@@ -1827,17 +1577,7 @@
     "naturalization date": "1940-12-23",
     "naturalization location": "chicago",
     "anum": 4527406,
-    "id": 182
-  },
-  {
-    "country": "Mexico",
-    "port of entry": "laredo",
-    "date of entry": "1924-01-07",
-    "name": "Concepcion Galindo",
-    "naturalization date": "1945-12-17",
-    "naturalization location": "san antonio",
-    "anum": 4530525,
-    "id": 183
+    "id": 157
   },
   {
     "country": "Greece",
@@ -1847,7 +1587,7 @@
     "naturalization date": "1940-09-26",
     "naturalization location": "newark",
     "anum": 4533161,
-    "id": 184
+    "id": 158
   },
   {
     "country": "Greece",
@@ -1857,7 +1597,7 @@
     "naturalization date": "1941-01-28",
     "naturalization location": "new york",
     "anum": 4536120,
-    "id": 185
+    "id": 159
   },
   {
     "country": "Yugoslavia",
@@ -1867,7 +1607,7 @@
     "naturalization date": "1944-05-08",
     "naturalization location": "detroit",
     "anum": 4545948,
-    "id": 186
+    "id": 160
   },
   {
     "country": "United Kingdom",
@@ -1877,7 +1617,7 @@
     "naturalization date": "1944-02-21",
     "naturalization location": "san francisco",
     "anum": 4573970,
-    "id": 187
+    "id": 161
   },
   {
     "country": "Canada",
@@ -1887,7 +1627,7 @@
     "naturalization date": "1943-01-08",
     "naturalization location": "new orleans",
     "anum": 4583995,
-    "id": 188
+    "id": 162
   },
   {
     "country": "United Kingdom",
@@ -1897,7 +1637,7 @@
     "naturalization date": "1941-07-17",
     "naturalization location": "national records center",
     "anum": 4589324,
-    "id": 189
+    "id": 163
   },
   {
     "country": "Canada",
@@ -1907,7 +1647,7 @@
     "naturalization date": "1942-11-13",
     "naturalization location": "los angeles",
     "anum": 4590268,
-    "id": 190
+    "id": 164
   },
   {
     "country": "United Kingdom",
@@ -1917,7 +1657,7 @@
     "naturalization date": "1940-12-23",
     "naturalization location": "new york",
     "anum": 4594099,
-    "id": 191
+    "id": 165
   },
   {
     "country": "Czechoslovakia",
@@ -1927,7 +1667,7 @@
     "naturalization date": "1942-03-31",
     "naturalization location": "chicago",
     "anum": 4595695,
-    "id": 192
+    "id": 166
   },
   {
     "country": "Germany",
@@ -1937,7 +1677,7 @@
     "naturalization date": "1944-03-22",
     "naturalization location": "newark",
     "anum": 4611292,
-    "id": 193
+    "id": 167
   },
   {
     "country": "United States",
@@ -1947,7 +1687,7 @@
     "naturalization date": "1942-03-09",
     "naturalization location": "philadelhia",
     "anum": 4615564,
-    "id": 194
+    "id": 168
   },
   {
     "country": "Austria",
@@ -1957,7 +1697,7 @@
     "naturalization date": "1940-12-10",
     "naturalization location": "new york",
     "anum": 4620668,
-    "id": 195
+    "id": 169
   },
   {
     "country": "Russia",
@@ -1967,17 +1707,7 @@
     "naturalization date": "1941-04-01",
     "naturalization location": "new york",
     "anum": 4627531,
-    "id": 196
-  },
-  {
-    "country": "Italy",
-    "port of entry": "unknown",
-    "date of entry": "1907-05-04",
-    "name": "Donato Schiuma",
-    "naturalization date": "1945-02-08",
-    "naturalization location": "buffalo",
-    "anum": 4648010,
-    "id": 197
+    "id": 170
   },
   {
     "country": "Russia",
@@ -1987,7 +1717,7 @@
     "naturalization date": "1942-07-10",
     "naturalization location": "detroit",
     "anum": 4651355,
-    "id": 198
+    "id": 171
   },
   {
     "country": "Hungary",
@@ -1997,7 +1727,7 @@
     "naturalization date": "1944-05-26",
     "naturalization location": "cleveland",
     "anum": 4660511,
-    "id": 199
+    "id": 172
   },
   {
     "country": "Mexico",
@@ -2007,7 +1737,7 @@
     "naturalization date": "1944-11-05",
     "naturalization location": "el paso",
     "anum": 4665973,
-    "id": 200
+    "id": 173
   },
   {
     "country": "Canada",
@@ -2017,7 +1747,7 @@
     "naturalization date": "1942-11-23",
     "naturalization location": "new york",
     "anum": 4668556,
-    "id": 201
+    "id": 174
   },
   {
     "country": "Canada",
@@ -2027,17 +1757,7 @@
     "naturalization date": "1942-11-13",
     "naturalization location": "los angeles",
     "anum": 4668647,
-    "id": 202
-  },
-  {
-    "country": "Germany",
-    "port of entry": "new york",
-    "date of entry": "1928-06-10",
-    "name": "August Wolf",
-    "naturalization date": "1945-11-08",
-    "naturalization location": "philadelhia",
-    "anum": 4669161,
-    "id": 203
+    "id": 175
   },
   {
     "country": "Germany",
@@ -2047,7 +1767,7 @@
     "naturalization date": "1944-04-17",
     "naturalization location": "san francisco",
     "anum": 4671936,
-    "id": 204
+    "id": 176
   },
   {
     "country": "Norway",
@@ -2057,7 +1777,7 @@
     "naturalization date": "1943-10-11",
     "naturalization location": "detroit",
     "anum": 4713566,
-    "id": 205
+    "id": 177
   },
   {
     "country": "Germany",
@@ -2067,7 +1787,7 @@
     "naturalization date": "1944-11-20",
     "naturalization location": "new york",
     "anum": 4717406,
-    "id": 206
+    "id": 178
   },
   {
     "country": "Poland",
@@ -2077,7 +1797,7 @@
     "naturalization date": "1943-03-11",
     "naturalization location": "philadelhia",
     "anum": 4720276,
-    "id": 207
+    "id": 179
   },
   {
     "country": "Czechoslovakia",
@@ -2087,7 +1807,7 @@
     "naturalization date": "1944-12-01",
     "naturalization location": "pittsburgh",
     "anum": 4720795,
-    "id": 208
+    "id": 180
   },
   {
     "country": "Italy",
@@ -2097,7 +1817,7 @@
     "naturalization date": "1944-03-02",
     "naturalization location": "new york",
     "anum": 4736993,
-    "id": 209
+    "id": 181
   },
   {
     "country": "Bulgaria",
@@ -2107,7 +1827,7 @@
     "naturalization date": "1944-04-17",
     "naturalization location": "detroit",
     "anum": 4739909,
-    "id": 210
+    "id": 182
   },
   {
     "country": "Mexico",
@@ -2117,7 +1837,7 @@
     "naturalization date": "1943-02-05",
     "naturalization location": "los angeles",
     "anum": 4745974,
-    "id": 211
+    "id": 183
   },
   {
     "country": "Portugal",
@@ -2127,7 +1847,7 @@
     "naturalization date": "1943-02-11",
     "naturalization location": "atlanta",
     "anum": 4748191,
-    "id": 212
+    "id": 184
   },
   {
     "country": "Poland",
@@ -2137,7 +1857,7 @@
     "naturalization date": "1941-03-20",
     "naturalization location": "new york",
     "anum": 4811302,
-    "id": 213
+    "id": 185
   },
   {
     "country": "Canada",
@@ -2147,7 +1867,7 @@
     "naturalization date": "1943-01-14",
     "naturalization location": "new york",
     "anum": 4816879,
-    "id": 214
+    "id": 186
   },
   {
     "country": "Poland",
@@ -2157,7 +1877,7 @@
     "naturalization date": "1944-03-14",
     "naturalization location": "new york",
     "anum": 4819951,
-    "id": 215
+    "id": 187
   },
   {
     "country": "Italy",
@@ -2167,7 +1887,7 @@
     "naturalization date": "1940-12-23",
     "naturalization location": "san francisco",
     "anum": 4824151,
-    "id": 216
+    "id": 188
   },
   {
     "country": "Canada",
@@ -2177,7 +1897,7 @@
     "naturalization date": "1943-06-03",
     "naturalization location": "philadelhia",
     "anum": 4824211,
-    "id": 217
+    "id": 189
   },
   {
     "country": "Hungary",
@@ -2187,7 +1907,7 @@
     "naturalization date": "1944-06-23",
     "naturalization location": "cincinnati",
     "anum": 4826239,
-    "id": 218
+    "id": 190
   },
   {
     "country": "Germany",
@@ -2197,17 +1917,7 @@
     "naturalization date": "1944-03-07",
     "naturalization location": "new york",
     "anum": 4827147,
-    "id": 219
-  },
-  {
-    "country": "Austria",
-    "port of entry": "new york",
-    "date of entry": "1939-11-20",
-    "name": "Sascha Andre Germer",
-    "naturalization date": "1945-04-11",
-    "naturalization location": "new york",
-    "anum": 4827703,
-    "id": 220
+    "id": 191
   },
   {
     "country": "Switzerland",
@@ -2217,7 +1927,7 @@
     "naturalization date": "1941-06-04",
     "naturalization location": "san francisco",
     "anum": 4829343,
-    "id": 221
+    "id": 192
   },
   {
     "country": "United Kingdom",
@@ -2227,7 +1937,7 @@
     "naturalization date": "1943-09-06",
     "naturalization location": "los angeles",
     "anum": 4829361,
-    "id": 222
+    "id": 193
   },
   {
     "country": "Honduras",
@@ -2237,7 +1947,7 @@
     "naturalization date": "1942-12-15",
     "naturalization location": "tampa",
     "anum": 4829390,
-    "id": 223
+    "id": 194
   },
   {
     "country": "Russia",
@@ -2247,7 +1957,7 @@
     "naturalization date": "1943-06-17",
     "naturalization location": "detroit",
     "anum": 4829499,
-    "id": 224
+    "id": 195
   },
   {
     "country": "United Kingdom",
@@ -2257,7 +1967,7 @@
     "naturalization date": "1943-01-13",
     "naturalization location": "detroit",
     "anum": 4829516,
-    "id": 225
+    "id": 196
   },
   {
     "country": "Norway",
@@ -2267,7 +1977,7 @@
     "naturalization date": "1943-04-09",
     "naturalization location": "detroit",
     "anum": 4829518,
-    "id": 226
+    "id": 197
   },
   {
     "country": "Poland",
@@ -2277,7 +1987,7 @@
     "naturalization date": "1942-11-09",
     "naturalization location": "boston",
     "anum": 4829541,
-    "id": 227
+    "id": 198
   },
   {
     "country": "Ireland",
@@ -2287,7 +1997,7 @@
     "naturalization date": "1941-03-10",
     "naturalization location": "boston",
     "anum": 4829554,
-    "id": 228
+    "id": 199
   },
   {
     "country": "Canada",
@@ -2297,7 +2007,7 @@
     "naturalization date": "1941-03-17",
     "naturalization location": "boston",
     "anum": 4829555,
-    "id": 229
+    "id": 200
   },
   {
     "country": "United Kingdom",
@@ -2307,7 +2017,7 @@
     "naturalization date": "1942-06-09",
     "naturalization location": "new york",
     "anum": 4829604,
-    "id": 230
+    "id": 201
   },
   {
     "country": "Austria",
@@ -2317,7 +2027,7 @@
     "naturalization date": "1943-04-06",
     "naturalization location": "new york",
     "anum": 4829642,
-    "id": 231
+    "id": 202
   },
   {
     "country": "Germany",
@@ -2327,7 +2037,7 @@
     "naturalization date": "1943-08-28",
     "naturalization location": "newark",
     "anum": 4829677,
-    "id": 232
+    "id": 203
   },
   {
     "country": "Russia",
@@ -2337,7 +2047,7 @@
     "naturalization date": "1942-12-19",
     "naturalization location": "newark",
     "anum": 4829679,
-    "id": 233
+    "id": 204
   },
   {
     "country": "Austria",
@@ -2347,7 +2057,7 @@
     "naturalization date": "1943-09-20",
     "naturalization location": "phoenix",
     "anum": 4829749,
-    "id": 234
+    "id": 205
   },
   {
     "country": "Russia",
@@ -2357,7 +2067,7 @@
     "naturalization date": "1942-07-07",
     "naturalization location": "new york",
     "anum": 4829791,
-    "id": 235
+    "id": 206
   },
   {
     "country": "France",
@@ -2367,7 +2077,7 @@
     "naturalization date": "1941-11-21",
     "naturalization location": "new york",
     "anum": 4829860,
-    "id": 236
+    "id": 207
   },
   {
     "country": "Canada",
@@ -2377,7 +2087,7 @@
     "naturalization date": "1943-02-19",
     "naturalization location": "new york",
     "anum": 4829901,
-    "id": 237
+    "id": 208
   },
   {
     "country": "Russia",
@@ -2387,7 +2097,7 @@
     "naturalization date": "1942-03-25",
     "naturalization location": "st. paul",
     "anum": 4829929,
-    "id": 238
+    "id": 209
   },
   {
     "country": "Ireland",
@@ -2397,7 +2107,7 @@
     "naturalization date": "1941-12-11",
     "naturalization location": "newark",
     "anum": 4830042,
-    "id": 239
+    "id": 210
   },
   {
     "country": "Italy",
@@ -2407,7 +2117,7 @@
     "naturalization date": "1941-11-17",
     "naturalization location": "newark",
     "anum": 4830047,
-    "id": 240
+    "id": 211
   },
   {
     "country": "Italy",
@@ -2417,7 +2127,7 @@
     "naturalization date": "1941-05-16",
     "naturalization location": "los angeles",
     "anum": 4830078,
-    "id": 241
+    "id": 212
   },
   {
     "country": "France",
@@ -2427,7 +2137,7 @@
     "naturalization date": "1943-03-31",
     "naturalization location": "newark",
     "anum": 4830167,
-    "id": 242
+    "id": 213
   },
   {
     "country": "Turkey",
@@ -2437,7 +2147,7 @@
     "naturalization date": "1942-06-15",
     "naturalization location": "new york",
     "anum": 4830170,
-    "id": 243
+    "id": 214
   },
   {
     "country": "Canada",
@@ -2447,7 +2157,7 @@
     "naturalization date": "1941-06-13",
     "naturalization location": "los angeles",
     "anum": 4830182,
-    "id": 244
+    "id": 215
   },
   {
     "country": "Sweden",
@@ -2457,7 +2167,7 @@
     "naturalization date": "1943-12-05",
     "naturalization location": "los angeles",
     "anum": 4830209,
-    "id": 245
+    "id": 216
   },
   {
     "country": "Ireland",
@@ -2467,7 +2177,7 @@
     "naturalization date": "1942-03-09",
     "naturalization location": "new york",
     "anum": 4830219,
-    "id": 246
+    "id": 217
   },
   {
     "country": "Poland",
@@ -2477,7 +2187,7 @@
     "naturalization date": "1940-12-26",
     "naturalization location": "new york",
     "anum": 4830500,
-    "id": 247
+    "id": 218
   },
   {
     "country": "Russia",
@@ -2487,7 +2197,7 @@
     "naturalization date": "1941-03-25",
     "naturalization location": "new york",
     "anum": 4840351,
-    "id": 248
+    "id": 219
   },
   {
     "country": "Italy",
@@ -2497,7 +2207,7 @@
     "naturalization date": "1944-01-25",
     "naturalization location": "new york",
     "anum": 4845343,
-    "id": 249
+    "id": 220
   },
   {
     "country": "Italy",
@@ -2507,7 +2217,7 @@
     "naturalization date": "1943-10-07",
     "naturalization location": "chicago",
     "anum": 4848784,
-    "id": 250
+    "id": 221
   },
   {
     "country": "Austria",
@@ -2517,7 +2227,7 @@
     "naturalization date": "1944-02-17",
     "naturalization location": "new york",
     "anum": 4850842,
-    "id": 251
+    "id": 222
   },
   {
     "country": "Canada",
@@ -2527,7 +2237,7 @@
     "naturalization date": "1941-08-13",
     "naturalization location": "new york",
     "anum": 4864982,
-    "id": 252
+    "id": 223
   },
   {
     "country": "United Kingdom",
@@ -2537,7 +2247,7 @@
     "naturalization date": "1940-12-05",
     "naturalization location": "new york",
     "anum": 4866216,
-    "id": 253
+    "id": 224
   },
   {
     "country": "Russia",
@@ -2547,7 +2257,7 @@
     "naturalization date": "1940-05-01",
     "naturalization location": "new york",
     "anum": 4867371,
-    "id": 254
+    "id": 225
   },
   {
     "country": "Germany",
@@ -2557,7 +2267,7 @@
     "naturalization date": "1944-09-07",
     "naturalization location": "newark",
     "anum": 4867692,
-    "id": 255
+    "id": 226
   },
   {
     "country": "Germany",
@@ -2567,7 +2277,7 @@
     "naturalization date": "1944-12-18",
     "naturalization location": "newark",
     "anum": 4867693,
-    "id": 256
+    "id": 227
   },
   {
     "country": "Switzerland",
@@ -2577,7 +2287,7 @@
     "naturalization date": "1943-06-10",
     "naturalization location": "new york",
     "anum": 4868069,
-    "id": 257
+    "id": 228
   },
   {
     "country": "Canada",
@@ -2587,7 +2297,7 @@
     "naturalization date": "1943-01-08",
     "naturalization location": "salt lake city",
     "anum": 4868217,
-    "id": 258
+    "id": 229
   },
   {
     "country": "Italy",
@@ -2597,7 +2307,7 @@
     "naturalization date": "1944-01-13",
     "naturalization location": "new york",
     "anum": 4881810,
-    "id": 259
+    "id": 230
   },
   {
     "country": "Unknown",
@@ -2607,7 +2317,7 @@
     "naturalization date": "1942-08-27",
     "naturalization location": "detroit",
     "anum": 4932474,
-    "id": 260
+    "id": 231
   },
   {
     "country": "Unknown",
@@ -2617,7 +2327,7 @@
     "naturalization date": "1941-12-03",
     "naturalization location": "new york",
     "anum": 4932512,
-    "id": 261
+    "id": 232
   },
   {
     "country": "Unknown",
@@ -2627,17 +2337,7 @@
     "naturalization date": "1941-08-20",
     "naturalization location": "newark",
     "anum": 4932570,
-    "id": 262
-  },
-  {
-    "country": "Unknown",
-    "port of entry": "",
-    "date of entry": null,
-    "name": "Eleanora Kempa",
-    "naturalization date": "1945-12-10",
-    "naturalization location": "cleveland",
-    "anum": 4932612,
-    "id": 263
+    "id": 233
   },
   {
     "country": "Unknown",
@@ -2647,7 +2347,7 @@
     "naturalization date": "1941-09-03",
     "naturalization location": "newark",
     "anum": 4932622,
-    "id": 264
+    "id": 234
   },
   {
     "country": "Unknown",
@@ -2657,7 +2357,7 @@
     "naturalization date": "1943-04-09",
     "naturalization location": "new york",
     "anum": 4932630,
-    "id": 265
+    "id": 235
   },
   {
     "country": "Unknown",
@@ -2667,7 +2367,7 @@
     "naturalization date": "1942-06-22",
     "naturalization location": "boston",
     "anum": 4932643,
-    "id": 266
+    "id": 236
   },
   {
     "country": "Unknown",
@@ -2677,7 +2377,7 @@
     "naturalization date": "1943-11-04",
     "naturalization location": "boston",
     "anum": 4932672,
-    "id": 267
+    "id": 237
   },
   {
     "country": "Unknown",
@@ -2687,7 +2387,7 @@
     "naturalization date": "1941-06-20",
     "naturalization location": "boston",
     "anum": 4932804,
-    "id": 268
+    "id": 238
   },
   {
     "country": "Unknown",
@@ -2697,7 +2397,7 @@
     "naturalization date": "1942-11-24",
     "naturalization location": "newark",
     "anum": 4932876,
-    "id": 269
+    "id": 239
   },
   {
     "country": "Unknown",
@@ -2707,7 +2407,7 @@
     "naturalization date": "1941-03-03",
     "naturalization location": "washington",
     "anum": 4932879,
-    "id": 270
+    "id": 240
   },
   {
     "country": "Unknown",
@@ -2717,7 +2417,7 @@
     "naturalization date": "1941-06-30",
     "naturalization location": "boston",
     "anum": 4932889,
-    "id": 271
+    "id": 241
   },
   {
     "country": "Unknown",
@@ -2727,7 +2427,7 @@
     "naturalization date": "1941-11-07",
     "naturalization location": "new york",
     "anum": 4932909,
-    "id": 272
+    "id": 242
   },
   {
     "country": "Unknown",
@@ -2737,7 +2437,7 @@
     "naturalization date": "1942-12-07",
     "naturalization location": "new york",
     "anum": 4932917,
-    "id": 273
+    "id": 243
   },
   {
     "country": "Unknown",
@@ -2747,7 +2447,7 @@
     "naturalization date": "1942-12-07",
     "naturalization location": "new york",
     "anum": 4932928,
-    "id": 274
+    "id": 244
   },
   {
     "country": "Unknown",
@@ -2757,7 +2457,7 @@
     "naturalization date": "1941-09-03",
     "naturalization location": "cleveland",
     "anum": 4933011,
-    "id": 275
+    "id": 245
   },
   {
     "country": "Hungary",
@@ -2767,7 +2467,7 @@
     "naturalization date": "1941-01-24",
     "naturalization location": "cleveland",
     "anum": 4933014,
-    "id": 276
+    "id": 246
   },
   {
     "country": "Unknown",
@@ -2777,7 +2477,7 @@
     "naturalization date": "1941-01-10",
     "naturalization location": "cleveland",
     "anum": 4933016,
-    "id": 277
+    "id": 247
   },
   {
     "country": "Unknown",
@@ -2787,7 +2487,7 @@
     "naturalization date": "1942-03-05",
     "naturalization location": "new york",
     "anum": 4933046,
-    "id": 278
+    "id": 248
   },
   {
     "country": "United Kingdom",
@@ -2797,7 +2497,7 @@
     "naturalization date": "1943-02-18",
     "naturalization location": "new york",
     "anum": 4933162,
-    "id": 279
+    "id": 249
   },
   {
     "country": "Romania",
@@ -2807,7 +2507,7 @@
     "naturalization date": "1941-05-15",
     "naturalization location": "new york",
     "anum": 4943585,
-    "id": 280
+    "id": 250
   },
   {
     "country": "Canada",
@@ -2817,7 +2517,7 @@
     "naturalization date": "1941-03-24",
     "naturalization location": "boston",
     "anum": 4950168,
-    "id": 281
+    "id": 251
   },
   {
     "country": "Spain",
@@ -2827,7 +2527,7 @@
     "naturalization date": "1941-12-15",
     "naturalization location": "philadelhia",
     "anum": 4954233,
-    "id": 282
+    "id": 252
   },
   {
     "country": "Unknown",
@@ -2837,7 +2537,7 @@
     "naturalization date": "1942-11-19",
     "naturalization location": "new york",
     "anum": 4962693,
-    "id": 283
+    "id": 253
   },
   {
     "country": "Brazil",
@@ -2847,7 +2547,7 @@
     "naturalization date": "1941-01-20",
     "naturalization location": "chicago",
     "anum": 4972182,
-    "id": 284
+    "id": 254
   },
   {
     "country": "Russia",
@@ -2857,7 +2557,7 @@
     "naturalization date": "1941-01-14",
     "naturalization location": "st. paul",
     "anum": 4974916,
-    "id": 285
+    "id": 255
   },
   {
     "country": "United Kingdom",
@@ -2867,7 +2567,7 @@
     "naturalization date": "1942-11-05",
     "naturalization location": "miami",
     "anum": 4995013,
-    "id": 286
+    "id": 256
   },
   {
     "country": "Germany",
@@ -2877,7 +2577,7 @@
     "naturalization date": "1944-07-20",
     "naturalization location": "new york",
     "anum": 5007220,
-    "id": 287
+    "id": 257
   },
   {
     "country": "Italy",
@@ -2887,7 +2587,7 @@
     "naturalization date": "1944-05-05",
     "naturalization location": "cleveland",
     "anum": 5007328,
-    "id": 288
+    "id": 258
   },
   {
     "country": "Germany",
@@ -2897,7 +2597,7 @@
     "naturalization date": "1944-06-12",
     "naturalization location": "san francisco",
     "anum": 5012786,
-    "id": 289
+    "id": 259
   },
   {
     "country": "Italy",
@@ -2907,7 +2607,7 @@
     "naturalization date": "1944-02-23",
     "naturalization location": "boston",
     "anum": 5015897,
-    "id": 290
+    "id": 260
   },
   {
     "country": "Italy",
@@ -2917,7 +2617,7 @@
     "naturalization date": "1943-08-20",
     "naturalization location": "new york",
     "anum": 5044527,
-    "id": 291
+    "id": 261
   },
   {
     "country": "Hungary",
@@ -2927,7 +2627,7 @@
     "naturalization date": "1944-02-07",
     "naturalization location": "detroit",
     "anum": 5056409,
-    "id": 292
+    "id": 262
   },
   {
     "country": "Italy",
@@ -2937,7 +2637,7 @@
     "naturalization date": "1944-01-25",
     "naturalization location": "memphis",
     "anum": 5061424,
-    "id": 293
+    "id": 263
   },
   {
     "country": "United Kingdom",
@@ -2947,7 +2647,7 @@
     "naturalization date": "1942-08-03",
     "naturalization location": "philadelhia",
     "anum": 5067510,
-    "id": 294
+    "id": 264
   },
   {
     "country": "Italy",
@@ -2957,7 +2657,7 @@
     "naturalization date": "1944-03-21",
     "naturalization location": "albany",
     "anum": 5077317,
-    "id": 295
+    "id": 265
   },
   {
     "country": "Germany",
@@ -2967,27 +2667,7 @@
     "naturalization date": "1944-11-16",
     "naturalization location": "new york",
     "anum": 5078750,
-    "id": 296
-  },
-  {
-    "country": "Germany",
-    "port of entry": "new york",
-    "date of entry": "1915-10-31",
-    "name": "Meta Wolf",
-    "naturalization date": "1945-02-19",
-    "naturalization location": "newark",
-    "anum": 5080445,
-    "id": 297
-  },
-  {
-    "country": "United Kingdom",
-    "port of entry": "new york",
-    "date of entry": "1905-08-29",
-    "name": "Margaret Ryan",
-    "naturalization date": "1945-03-12",
-    "naturalization location": "kansas city",
-    "anum": 5098829,
-    "id": 298
+    "id": 266
   },
   {
     "country": "Russia",
@@ -2997,7 +2677,7 @@
     "naturalization date": "1941-01-03",
     "naturalization location": "denver",
     "anum": 5117455,
-    "id": 299
+    "id": 267
   },
   {
     "country": "Poland",
@@ -3007,7 +2687,7 @@
     "naturalization date": "1941-04-14",
     "naturalization location": "new york",
     "anum": 5134876,
-    "id": 300
+    "id": 268
   },
   {
     "country": "Italy",
@@ -3017,7 +2697,7 @@
     "naturalization date": "1944-02-21",
     "naturalization location": "boston",
     "anum": 5143590,
-    "id": 301
+    "id": 269
   },
   {
     "country": "Italy",
@@ -3027,7 +2707,7 @@
     "naturalization date": "1942-09-01",
     "naturalization location": "milwaukee",
     "anum": 5144511,
-    "id": 302
+    "id": 270
   },
   {
     "country": "Poland",
@@ -3037,7 +2717,7 @@
     "naturalization date": "1940-12-27",
     "naturalization location": "los angeles",
     "anum": 5150626,
-    "id": 303
+    "id": 271
   },
   {
     "country": "Russia",
@@ -3047,7 +2727,7 @@
     "naturalization date": "1944-01-04",
     "naturalization location": "boston",
     "anum": 5161610,
-    "id": 304
+    "id": 272
   },
   {
     "country": "Italy",
@@ -3057,7 +2737,7 @@
     "naturalization date": "1942-06-24",
     "naturalization location": "philadelhia",
     "anum": 5174720,
-    "id": 305
+    "id": 273
   },
   {
     "country": "United Kingdom",
@@ -3067,17 +2747,7 @@
     "naturalization date": "1943-04-28",
     "naturalization location": "san francisco",
     "anum": 5175523,
-    "id": 306
-  },
-  {
-    "country": "Netherlands",
-    "port of entry": "trout river",
-    "date of entry": "1929-06-21",
-    "name": "Anna Williams",
-    "naturalization date": "1945-06-04",
-    "naturalization location": "buffalo",
-    "anum": 5182164,
-    "id": 307
+    "id": 274
   },
   {
     "country": "United States",
@@ -3087,17 +2757,7 @@
     "naturalization date": "1941-01-10",
     "naturalization location": "philadelhia",
     "anum": 5183587,
-    "id": 308
-  },
-  {
-    "country": "Czechoslovakia",
-    "port of entry": "",
-    "date of entry": null,
-    "name": "John Sulak",
-    "naturalization date": "1945-05-31",
-    "naturalization location": "new york",
-    "anum": 5189212,
-    "id": 309
+    "id": 275
   },
   {
     "country": "Canada",
@@ -3107,7 +2767,7 @@
     "naturalization date": "1943-09-09",
     "naturalization location": "eloy",
     "anum": 5193573,
-    "id": 310
+    "id": 276
   },
   {
     "country": "Germany",
@@ -3117,7 +2777,7 @@
     "naturalization date": "1943-04-19",
     "naturalization location": "san antonio",
     "anum": 5201138,
-    "id": 311
+    "id": 277
   },
   {
     "country": "Italy",
@@ -3127,7 +2787,7 @@
     "naturalization date": "1943-04-03",
     "naturalization location": "charlotte",
     "anum": 5201405,
-    "id": 312
+    "id": 278
   },
   {
     "country": "Italy",
@@ -3137,17 +2797,7 @@
     "naturalization date": "1944-12-05",
     "naturalization location": "washington",
     "anum": 5201596,
-    "id": 313
-  },
-  {
-    "country": "Poland",
-    "port of entry": "new york",
-    "date of entry": "1906-03-25",
-    "name": "Frank Kosmalski",
-    "naturalization date": "1945-06-11",
-    "naturalization location": "detroit",
-    "anum": 5211525,
-    "id": 314
+    "id": 279
   },
   {
     "country": "Russia",
@@ -3157,7 +2807,7 @@
     "naturalization date": "1941-05-05",
     "naturalization location": "new york",
     "anum": 5253089,
-    "id": 315
+    "id": 280
   },
   {
     "country": "Italy",
@@ -3167,7 +2817,7 @@
     "naturalization date": "1943-11-10",
     "naturalization location": "los angeles",
     "anum": 5253332,
-    "id": 316
+    "id": 281
   },
   {
     "country": "Canada",
@@ -3177,7 +2827,7 @@
     "naturalization date": "1941-09-13",
     "naturalization location": "detroit",
     "anum": 5253861,
-    "id": 317
+    "id": 282
   },
   {
     "country": "Finland",
@@ -3187,7 +2837,7 @@
     "naturalization date": "1940-12-03",
     "naturalization location": "detroit",
     "anum": 5254163,
-    "id": 318
+    "id": 283
   },
   {
     "country": "Austria",
@@ -3197,7 +2847,7 @@
     "naturalization date": "1943-09-24",
     "naturalization location": "charlotte",
     "anum": 5254415,
-    "id": 319
+    "id": 284
   },
   {
     "country": "Ireland",
@@ -3207,7 +2857,7 @@
     "naturalization date": "1943-09-01",
     "naturalization location": "philadelhia",
     "anum": 5257712,
-    "id": 320
+    "id": 285
   },
   {
     "country": "Cyprus",
@@ -3217,7 +2867,7 @@
     "naturalization date": "1943-02-06",
     "naturalization location": "atlanta",
     "anum": 5261910,
-    "id": 321
+    "id": 286
   },
   {
     "country": "Germany",
@@ -3227,7 +2877,7 @@
     "naturalization date": "1942-02-13",
     "naturalization location": "philadelhia",
     "anum": 5264159,
-    "id": 322
+    "id": 287
   },
   {
     "country": "Ireland",
@@ -3237,17 +2887,7 @@
     "naturalization date": "1941-01-20",
     "naturalization location": "pittsburgh",
     "anum": 5264274,
-    "id": 323
-  },
-  {
-    "country": "Poland",
-    "port of entry": "",
-    "date of entry": "1935-07-01",
-    "name": "Julie Freund",
-    "naturalization date": "1945-06-05",
-    "naturalization location": "new york",
-    "anum": 5264949,
-    "id": 324
+    "id": 288
   },
   {
     "country": "Ireland",
@@ -3257,7 +2897,7 @@
     "naturalization date": "1943-06-15",
     "naturalization location": "memphis",
     "anum": 5271910,
-    "id": 325
+    "id": 289
   },
   {
     "country": "United Kingdom",
@@ -3267,7 +2907,7 @@
     "naturalization date": "1940-12-19",
     "naturalization location": "pittsburgh",
     "anum": 5272082,
-    "id": 326
+    "id": 290
   },
   {
     "country": "Turkey",
@@ -3277,7 +2917,7 @@
     "naturalization date": "1941-01-10",
     "naturalization location": "detroit",
     "anum": 5273401,
-    "id": 327
+    "id": 291
   },
   {
     "country": "Germany",
@@ -3287,7 +2927,7 @@
     "naturalization date": "1941-01-24",
     "naturalization location": "cleveland",
     "anum": 5274479,
-    "id": 328
+    "id": 292
   },
   {
     "country": "Italy",
@@ -3297,7 +2937,7 @@
     "naturalization date": "1943-06-15",
     "naturalization location": "philadelhia",
     "anum": 5278455,
-    "id": 329
+    "id": 293
   },
   {
     "country": "Italy",
@@ -3307,7 +2947,7 @@
     "naturalization date": "1944-05-02",
     "naturalization location": "hartford",
     "anum": 5297043,
-    "id": 330
+    "id": 294
   },
   {
     "country": "Czechoslovakia",
@@ -3317,7 +2957,7 @@
     "naturalization date": "1944-02-21",
     "naturalization location": "new york",
     "anum": 5310595,
-    "id": 331
+    "id": 295
   },
   {
     "country": "Poland",
@@ -3327,7 +2967,7 @@
     "naturalization date": "1944-02-28",
     "naturalization location": "new york",
     "anum": 5312585,
-    "id": 332
+    "id": 296
   },
   {
     "country": "Germany",
@@ -3337,7 +2977,7 @@
     "naturalization date": "1944-08-24",
     "naturalization location": "new york",
     "anum": 5329581,
-    "id": 333
+    "id": 297
   },
   {
     "country": "Italy",
@@ -3347,7 +2987,7 @@
     "naturalization date": "1943-11-30",
     "naturalization location": "newark",
     "anum": 5344401,
-    "id": 334
+    "id": 298
   },
   {
     "country": "Germany",
@@ -3357,7 +2997,7 @@
     "naturalization date": "1940-12-17",
     "naturalization location": "los angeles",
     "anum": 5362982,
-    "id": 335
+    "id": 299
   },
   {
     "country": "Germany",
@@ -3367,7 +3007,7 @@
     "naturalization date": "1944-06-19",
     "naturalization location": "new york",
     "anum": 5363791,
-    "id": 336
+    "id": 300
   },
   {
     "country": "Canada",
@@ -3377,7 +3017,7 @@
     "naturalization date": "1941-03-17",
     "naturalization location": "new york",
     "anum": 5371583,
-    "id": 337
+    "id": 301
   },
   {
     "country": "Russia",
@@ -3387,7 +3027,7 @@
     "naturalization date": "1944-09-01",
     "naturalization location": "kansas city",
     "anum": 5379385,
-    "id": 338
+    "id": 302
   },
   {
     "country": "Germany",
@@ -3397,7 +3037,7 @@
     "naturalization date": "1943-12-30",
     "naturalization location": "indianapolis",
     "anum": 5384967,
-    "id": 339
+    "id": 303
   },
   {
     "country": "Germany",
@@ -3407,7 +3047,7 @@
     "naturalization date": "1944-11-10",
     "naturalization location": "buffalo",
     "anum": 5388524,
-    "id": 340
+    "id": 304
   },
   {
     "country": "Italy",
@@ -3417,7 +3057,7 @@
     "naturalization date": "1944-04-26",
     "naturalization location": "philadelhia",
     "anum": 5389838,
-    "id": 341
+    "id": 305
   },
   {
     "country": "Poland",
@@ -3427,7 +3067,7 @@
     "naturalization date": "1941-04-07",
     "naturalization location": "new york",
     "anum": 5427008,
-    "id": 342
+    "id": 306
   },
   {
     "country": "Germany",
@@ -3437,7 +3077,7 @@
     "naturalization date": "1944-06-07",
     "naturalization location": "new york",
     "anum": 5427504,
-    "id": 343
+    "id": 307
   },
   {
     "country": "Germany",
@@ -3447,27 +3087,7 @@
     "naturalization date": "1942-12-11",
     "naturalization location": "los angeles",
     "anum": 5457749,
-    "id": 344
-  },
-  {
-    "country": "Ireland",
-    "port of entry": "new york",
-    "date of entry": "1922-03-10",
-    "name": "Nellie Ruane",
-    "naturalization date": "1945-08-26",
-    "naturalization location": "chicago",
-    "anum": 5510516,
-    "id": 345
-  },
-  {
-    "country": "Italy",
-    "port of entry": "new york",
-    "date of entry": "1913-04-01",
-    "name": "Virginio Marucci",
-    "naturalization date": "1945-08-27",
-    "naturalization location": "cincinnati",
-    "anum": 5513236,
-    "id": 346
+    "id": 308
   },
   {
     "country": "Germany",
@@ -3477,7 +3097,7 @@
     "naturalization date": "1941-11-21",
     "naturalization location": "new york",
     "anum": 5538851,
-    "id": 347
+    "id": 309
   },
   {
     "country": "United Kingdom",
@@ -3487,7 +3107,7 @@
     "naturalization date": "1941-11-21",
     "naturalization location": "new york",
     "anum": 5538860,
-    "id": 348
+    "id": 310
   },
   {
     "country": "Italy",
@@ -3497,7 +3117,7 @@
     "naturalization date": "1943-06-21",
     "naturalization location": "philadelhia",
     "anum": 5553605,
-    "id": 349
+    "id": 311
   },
   {
     "country": "Romania",
@@ -3507,7 +3127,7 @@
     "naturalization date": "1944-03-22",
     "naturalization location": "newark",
     "anum": 5566008,
-    "id": 350
+    "id": 312
   },
   {
     "country": "Germany",
@@ -3517,7 +3137,7 @@
     "naturalization date": "1943-04-16",
     "naturalization location": "mariel cuban doc center",
     "anum": 5607742,
-    "id": 351
+    "id": 313
   },
   {
     "country": "Germany",
@@ -3527,7 +3147,7 @@
     "naturalization date": "1941-04-07",
     "naturalization location": "new york",
     "anum": 5617984,
-    "id": 352
+    "id": 314
   },
   {
     "country": "United Kingdom",
@@ -3537,17 +3157,7 @@
     "naturalization date": "1942-04-27",
     "naturalization location": "detroit",
     "anum": 5648381,
-    "id": 353
-  },
-  {
-    "country": "Ireland",
-    "port of entry": "new york",
-    "date of entry": "1906-06-14",
-    "name": "Mary Gallagher",
-    "naturalization date": "1945-03-28",
-    "naturalization location": "new york",
-    "anum": 5656887,
-    "id": 354
+    "id": 315
   },
   {
     "country": "United Kingdom",
@@ -3557,7 +3167,7 @@
     "naturalization date": "1944-08-09",
     "naturalization location": "chicago",
     "anum": 5667305,
-    "id": 355
+    "id": 316
   },
   {
     "country": "Austria",
@@ -3567,7 +3177,7 @@
     "naturalization date": "1944-08-16",
     "naturalization location": "cleveland",
     "anum": 5667956,
-    "id": 356
+    "id": 317
   },
   {
     "country": "",
@@ -3577,7 +3187,7 @@
     "naturalization date": "1943-12-31",
     "naturalization location": "pittsburgh",
     "anum": 5672066,
-    "id": 357
+    "id": 318
   },
   {
     "country": "Italy",
@@ -3587,7 +3197,7 @@
     "naturalization date": "1944-04-21",
     "naturalization location": "new york",
     "anum": 5678348,
-    "id": 358
+    "id": 319
   },
   {
     "country": "United Kingdom",
@@ -3597,7 +3207,7 @@
     "naturalization date": "1943-11-18",
     "naturalization location": "newark",
     "anum": 5688457,
-    "id": 359
+    "id": 320
   },
   {
     "country": "Philippines",
@@ -3607,7 +3217,7 @@
     "naturalization date": "1944-02-07",
     "naturalization location": "los angeles",
     "anum": 5708436,
-    "id": 360
+    "id": 321
   },
   {
     "country": "Germany",
@@ -3617,7 +3227,7 @@
     "naturalization date": "1944-11-10",
     "naturalization location": "new york",
     "anum": 5717424,
-    "id": 361
+    "id": 322
   },
   {
     "country": "Italy",
@@ -3627,7 +3237,7 @@
     "naturalization date": "1944-05-01",
     "naturalization location": "albany",
     "anum": 5724174,
-    "id": 362
+    "id": 323
   },
   {
     "country": "Italy",
@@ -3637,17 +3247,7 @@
     "naturalization date": "1944-07-14",
     "naturalization location": "cleveland",
     "anum": 5739676,
-    "id": 363
-  },
-  {
-    "country": "Italy",
-    "port of entry": "fresno",
-    "date of entry": "1906-03-02",
-    "name": "Concetta Abate",
-    "naturalization date": "1945-12-11",
-    "naturalization location": "fresno",
-    "anum": 5747555,
-    "id": 364
+    "id": 324
   },
   {
     "country": "Germany",
@@ -3657,7 +3257,7 @@
     "naturalization date": "1942-12-28",
     "naturalization location": "los angeles",
     "anum": 5759045,
-    "id": 365
+    "id": 325
   },
   {
     "country": "Italy",
@@ -3667,17 +3267,7 @@
     "naturalization date": "1944-06-12",
     "naturalization location": "new york",
     "anum": 5784074,
-    "id": 366
-  },
-  {
-    "country": "Unknown",
-    "port of entry": "unknown poe",
-    "date of entry": null,
-    "name": "Kalivakis Stamatios",
-    "naturalization date": "1945-11-14",
-    "naturalization location": "new york",
-    "anum": 5788504,
-    "id": 367
+    "id": 326
   },
   {
     "country": "Ireland",
@@ -3687,27 +3277,7 @@
     "naturalization date": "1941-09-09",
     "naturalization location": "omaha",
     "anum": 5831706,
-    "id": 368
-  },
-  {
-    "country": "listed as",
-    "port of entry": "unknown",
-    "date of entry": "1921-06-11",
-    "name": "Mariano Borges",
-    "naturalization date": "1945-09-05",
-    "naturalization location": "san francisco",
-    "anum": 5843112,
-    "id": 369
-  },
-  {
-    "country": "Canada",
-    "port of entry": "unknown",
-    "date of entry": "1924-05-01",
-    "name": "Ruby Johnson",
-    "naturalization date": "1945-09-19",
-    "naturalization location": "detroit",
-    "anum": 5843301,
-    "id": 370
+    "id": 327
   },
   {
     "country": "Portugal",
@@ -3717,7 +3287,7 @@
     "naturalization date": "1944-03-24",
     "naturalization location": "boston",
     "anum": 5857280,
-    "id": 371
+    "id": 328
   },
   {
     "country": "Germany",
@@ -3727,47 +3297,7 @@
     "naturalization date": "1944-12-18",
     "naturalization location": "atlanta",
     "anum": 5857908,
-    "id": 372
-  },
-  {
-    "country": "Germany",
-    "port of entry": "new york",
-    "date of entry": "1938-11-04",
-    "name": "Bert Whitfield",
-    "naturalization date": "1945-06-21",
-    "naturalization location": "houston",
-    "anum": 5867146,
-    "id": 373
-  },
-  {
-    "country": "Mexico",
-    "port of entry": "nogales",
-    "date of entry": "1930-02-26",
-    "name": "Armando Corral",
-    "naturalization date": "1945-02-17",
-    "naturalization location": "los angeles",
-    "anum": 5895486,
-    "id": 374
-  },
-  {
-    "country": "listed as",
-    "port of entry": "new orleans",
-    "date of entry": "1902-01-01",
-    "name": "Sam Bono",
-    "naturalization date": "1945-02-10",
-    "naturalization location": "dallas",
-    "anum": 5910361,
-    "id": 375
-  },
-  {
-    "country": "Austria",
-    "port of entry": "",
-    "date of entry": null,
-    "name": "Berthold Silving",
-    "naturalization date": "1945-05-16",
-    "naturalization location": "miami",
-    "anum": 5920958,
-    "id": 376
+    "id": 329
   },
   {
     "country": "Italy",
@@ -3777,37 +3307,7 @@
     "naturalization date": "1944-12-15",
     "naturalization location": "new york",
     "anum": 5937322,
-    "id": 377
-  },
-  {
-    "country": "Poland",
-    "port of entry": "new york",
-    "date of entry": "1905-05-01",
-    "name": "Mae Defalco",
-    "naturalization date": "1945-08-07",
-    "naturalization location": "new york",
-    "anum": 5940780,
-    "id": 378
-  },
-  {
-    "country": "Switzerland",
-    "port of entry": "new york",
-    "date of entry": null,
-    "name": "Bertha Vinnell",
-    "naturalization date": "1945-09-14",
-    "naturalization location": "los angeles",
-    "anum": 5950981,
-    "id": 379
-  },
-  {
-    "country": "Ireland",
-    "port of entry": "new york",
-    "date of entry": "1907-04-01",
-    "name": "Mary Fitzgerald",
-    "naturalization date": "1945-10-08",
-    "naturalization location": "boston",
-    "anum": 5953270,
-    "id": 380
+    "id": 330
   },
   {
     "country": "Canada",
@@ -3817,7 +3317,7 @@
     "naturalization date": "1944-04-04",
     "naturalization location": "portland",
     "anum": 5963857,
-    "id": 381
+    "id": 331
   },
   {
     "country": "Barbados",
@@ -3827,7 +3327,7 @@
     "naturalization date": "1944-08-28",
     "naturalization location": "cincinnati",
     "anum": 5974698,
-    "id": 382
+    "id": 332
   },
   {
     "country": "Hungary",
@@ -3837,17 +3337,7 @@
     "naturalization date": "1944-07-14",
     "naturalization location": "los angeles",
     "anum": 5976468,
-    "id": 383
-  },
-  {
-    "country": "Germany",
-    "port of entry": "hoboken",
-    "date of entry": "1927-05-01",
-    "name": "Eric Schumacher",
-    "naturalization date": "1945-01-02",
-    "naturalization location": "san francisco",
-    "anum": 5979319,
-    "id": 384
+    "id": 333
   },
   {
     "country": "Canada",
@@ -3857,7 +3347,7 @@
     "naturalization date": "1944-06-12",
     "naturalization location": "boston",
     "anum": 5979987,
-    "id": 385
+    "id": 334
   },
   {
     "country": "Austria",
@@ -3867,16 +3357,196 @@
     "naturalization date": "1940-06-26",
     "naturalization location": "st. paul",
     "anum": 5984661,
-    "id": 386
+    "id": 335
   },
   {
-    "country": "",
-    "port of entry": "miami",
-    "date of entry": "1968-08-16",
-    "name": "Beatrice Moss",
-    "naturalization date": "1945-05-16",
-    "naturalization location": "miami",
-    "anum": 6002286,
-    "id": 387
+    "country": "Canada",
+    "port of entry": "boston",
+    "date of entry": "1924-10-19",
+    "name": "Gendall Ripley",
+    "naturalization date": "1942-12-21",
+    "naturalization location": "boston",
+    "anum": 7399162,
+    "id": 336
+  },
+  {
+    "country": "Germany",
+    "port of entry": "new york",
+    "date of entry": "1941-02-27",
+    "name": "Walter Frank",
+    "naturalization date": "1944-06-22",
+    "naturalization location": "new york",
+    "anum": 7520346,
+    "id": 337
+  },
+  {
+    "country": "Hong Kong",
+    "port of entry": "seattle",
+    "date of entry": "1940-12-20",
+    "name": "James Braga",
+    "naturalization date": "1944-05-02",
+    "naturalization location": "chicago",
+    "anum": 7525225,
+    "id": 338
+  },
+  {
+    "country": "Poland",
+    "port of entry": "new york",
+    "date of entry": "1935-06-08",
+    "name": "Paulina Meadow",
+    "naturalization date": "1944-11-08",
+    "naturalization location": "new york",
+    "anum": 7545168,
+    "id": 339
+  },
+  {
+    "country": "Germany",
+    "port of entry": "new york",
+    "date of entry": "1941-04-25",
+    "name": "Otto Pfister",
+    "naturalization date": "1944-05-25",
+    "naturalization location": "washington",
+    "anum": 7596628,
+    "id": 340
+  },
+  {
+    "country": "United Kingdom",
+    "port of entry": "",
+    "date of entry": null,
+    "name": "John Martin",
+    "naturalization date": "1944-01-29",
+    "naturalization location": "san francisco",
+    "anum": 7603519,
+    "id": 341
+  },
+  {
+    "country": "United Kingdom",
+    "port of entry": "san francisco",
+    "date of entry": null,
+    "name": "Eric Hayes",
+    "naturalization date": "1943-09-21",
+    "naturalization location": "san francisco",
+    "anum": 7616738,
+    "id": 342
+  },
+  {
+    "country": "United States",
+    "port of entry": "",
+    "date of entry": null,
+    "name": "Catherine Mackinnon",
+    "naturalization date": "1942-06-25",
+    "naturalization location": "chicago",
+    "anum": 7679211,
+    "id": 343
+  },
+  {
+    "country": "Norway",
+    "port of entry": "",
+    "date of entry": null,
+    "name": "Rasmus Knudsen",
+    "naturalization date": "1941-06-12",
+    "naturalization location": "anchorage",
+    "anum": 7682226,
+    "id": 344
+  },
+  {
+    "country": "Canada",
+    "port of entry": "derby line",
+    "date of entry": "1951-06-28",
+    "name": "Ludivina Saulinier",
+    "naturalization date": "1941-06-30",
+    "naturalization location": "boston",
+    "anum": 8063768,
+    "id": 345
+  },
+  {
+    "country": "Canada",
+    "port of entry": "vanceboro",
+    "date of entry": "1952-12-22",
+    "name": "Mary Madigan",
+    "naturalization date": "1942-04-21",
+    "naturalization location": "boston",
+    "anum": 8427794,
+    "id": 346
+  },
+  {
+    "country": "Hungary",
+    "port of entry": "new york",
+    "date of entry": "1909-03-26",
+    "name": "Gabor Hornyak",
+    "naturalization date": "1940-09-20",
+    "naturalization location": "cincinnati",
+    "anum": 10043570,
+    "id": 347
+  },
+  {
+    "country": "Italy",
+    "port of entry": "",
+    "date of entry": null,
+    "name": "Josie Tabor",
+    "naturalization date": "1942-11-04",
+    "naturalization location": "new orleans",
+    "anum": 10353970,
+    "id": 348
+  },
+  {
+    "country": "Israel",
+    "port of entry": "",
+    "date of entry": null,
+    "name": "Jiryis Farah",
+    "naturalization date": "1944-11-10",
+    "naturalization location": "detroit",
+    "anum": 10396896,
+    "id": 349
+  },
+  {
+    "country": "Canada",
+    "port of entry": "detroit",
+    "date of entry": "1957-10-03",
+    "name": "Gladys Edinger",
+    "naturalization date": "1944-08-28",
+    "naturalization location": "detroit",
+    "anum": 10878585,
+    "id": 350
+  },
+  {
+    "country": "Canada",
+    "port of entry": "boston",
+    "date of entry": "1929-10-06",
+    "name": "Edith Larkin",
+    "naturalization date": "1942-05-11",
+    "naturalization location": "boston",
+    "anum": 10900026,
+    "id": 351
+  },
+  {
+    "country": "Russia",
+    "port of entry": "",
+    "date of entry": null,
+    "name": "Jack Lerner",
+    "naturalization date": "1941-02-17",
+    "naturalization location": "newark",
+    "anum": 10954439,
+    "id": 352
+  },
+  {
+    "country": "Yugoslavia",
+    "port of entry": "",
+    "date of entry": null,
+    "name": "Louis Spelic",
+    "naturalization date": "1940-06-14",
+    "naturalization location": "los angeles",
+    "anum": 11085485,
+    "id": 353
+  },
+  {
+    "country": "Sweden",
+    "port of entry": "",
+    "date of entry": null,
+    "name": "Anna Trolin",
+    "naturalization date": "1944-05-17",
+    "naturalization location": "detroit",
+    "anum": 11698517,
+    "id": 354
   }
 ]

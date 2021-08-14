@@ -104,7 +104,7 @@ function App() {
 
         <Container className={classes.top} maxWidth="md">
           <Typography variant="h2" component="h1" gutterBottom>
-            A Journey into Alien Numbers in the 1940s
+            Sequential Alien Numbers in the mid 1940s
           </Typography>
           <Typography variant="h4">
             HIST 175 Final Project
@@ -125,18 +125,36 @@ function App() {
           </Body>
 
           <SubTitle>
-            Sequential A Numbers
+            Historical Context - Sequential A Numbers
           </SubTitle>
           <Body>
             An interesting question to ask is how exactly these numbers are allocated. As with many things in the United
             States government, it has changed drastically over the decades. The time period that is quite interesting
-            is 1940-1945. During that time, A numbers were often allocated in sequence by the INS in washington DC.
+            is 1940-1945. During that time, A numbers were often allocated in sequence by the INS in Washington DC.
             This lead to situations where groups of immigrants that were assigned consecutive A numbers may have
             been in the same line at the same office on the same day.
           </Body>
           <Body>
             During this time period some families would all apply for visas at the same time, and have sequential A
-            numbers assigned to them.
+            numbers assigned to them. Something you need to remember is that this was a time way before everything
+            was digitized. Everything was on paper. Applications and forms would be filled out locally and sent to
+            the INS for processing in Washington DC. Depending on the order that forms would be delivered and
+            processed. If someone picked up a stack of forms that were from one location, they would all
+            get A numbers allocated together at the same time.
+          </Body>
+          <Body>
+            This process would sometimes be inconsistent. It was being performed by humans after all. A worker
+            at the INS could easily get forms mixed up, or choose to process applications in a different
+            order from one day to the next.
+          </Body>
+
+          <SubTitle>
+            Hypothesis
+          </SubTitle>
+          <Body>
+            The hypothesis is that we can use what we know about sequential A numbers and graph analysis to
+            fill in gaps in publicly available data with some degree of certainty. Given the historical
+            context this seems logical.
           </Body>
 
           <SubTitle>
@@ -196,22 +214,6 @@ function App() {
             The main form of analysis that could help fill in gaps in the data is something called community
             detection. The objective of community detection is to find groupings of nodes within the graph
             structure. This is how places like facebook can determine who are in groups on their platform.
-          </Body>
-
-          <SubTitle>
-            Hypothesis vs Reality
-          </SubTitle>
-          <Body>
-            The hypothesis is that we can use what we know about sequential A numbers and graph analysis to
-            fill in gaps in the data with some degree of certainty. Unfortunately this did not work out
-            so well. The main problem is the data itself. The whole theory rests upon the idea that we
-            have sequential A numbers to analyze. The reality is that with the data available, there are
-            huge gaps in the A number values. There may be thousands of A numbers between one and the next.
-          </Body>
-          <Body>
-            For this analysis to have worked, I would have needed a much more complete dataset. It is not
-            so much a matter of the size of the dataset, but rather the A numbers within it. If I had
-            even a few stretches of sequential A numbers, I could start to fill in the unknowns.
           </Body>
 
           <SubTitle>
@@ -299,7 +301,17 @@ function App() {
             Conclusion
           </SubTitle>
           <Body>
-
+            Unfortunately these experiments did not yield the results I was hoping. The main problem is
+            the data itself. The whole theory rests upon the idea that we
+            have sequential A numbers to analyze. The reality is that with the data available, there are
+            huge gaps in the A number values. There may be thousands of A numbers between one and the next.
+          </Body>
+          <Body>
+            The hypothesis makes sense in context but the proof I was able to find is incomplete and
+            unconvincing. For this analysis to have worked, I would have needed a much more complete
+            dataset. It is not so much a matter of the size of the dataset, but rather the A numbers
+            within it. If I had even just a few stretches of sequential A numbers, I could start to
+            fill in the unknowns.
           </Body>
 
           <SubTitle>
